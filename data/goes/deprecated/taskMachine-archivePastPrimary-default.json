@@ -1,0 +1,53 @@
+{
+  "_id": "taskMachine-archivePastPrimary-default",
+  "sources": [
+    {
+      "address": "BEC00D8E",
+      "name": "Bodega"
+    },
+    {
+      "address": "CD23A62C",
+      "name": "Bodega"
+    },
+    {
+      "address": "BEC025B0",
+      "name": "Burns"
+    },
+    {
+      "address": "CD218534",
+      "name": "Burns"
+    },
+    {
+      "address": "BEC0035C",
+      "name": "Chickering"
+    },
+    {
+      "address": "CD23D0BC",
+      "name": "Chickering"
+    },
+    {
+      "address": "BEC01EF8",
+      "name": "Granites"
+    },
+    {
+      "address": "CD219642",
+      "name": "Granites"
+    },
+    {
+      "address": "BEC0102A",
+      "name": "Jepson"
+    },
+    {
+      "address": "CD2175B0",
+      "name": "Jepson"
+    },
+    {
+      "address": "BEC02B62",
+      "name": "Stunt"
+    },
+    {
+      "address": "CD2380C0",
+      "name": "Stunt"
+    }
+  ]
+}
