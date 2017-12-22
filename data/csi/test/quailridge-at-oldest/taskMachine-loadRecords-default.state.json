@@ -1,0 +1,21 @@
+{
+  "_id": "taskMachine-loadRecords-default",
+  "sources": [
+    {
+      "station": "test_quailridge",
+      "table": "TenMin",
+      "options": {
+        "order_option": "collected"
+      },
+      "description": "Test Quail Ridge",
+      "transform": {
+        "time_edit": "ad_8_h",
+        "reverse_time_edit": "su_8_h"
+      },
+      "load": {
+        "database": "station_quail_ridge",
+        "measurement": "ten_minute_data"
+      }
+    }
+  ]
+}

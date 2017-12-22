@@ -1,0 +1,18 @@
+{
+  "_id": "taskMachine-archiveRecords-default",
+  "sources": [
+    {
+      "station": "test_quailridge",
+      "table": "TenMin",
+      "options": {
+        "order_option": "collected",
+        "start_option": "relative-to-newest",
+        "backfill_seconds": 1296000
+      },
+      "description": "Test Quail Ridge",
+      "transform": {
+        "time_edit": "ad_8_h"
+      }
+    }
+  ]
+}
