@@ -8,6 +8,10 @@
     {
       "address": "CD23A62C",
       "description": "Bodega",
+      "load": {
+        "database": "station_bodega",
+        "measurement": "logger_data"
+      },
       "query": {
         "decode_columns": "",
         "decode_format": "fp2_27",
@@ -16,10 +20,6 @@
       "transform": {
         "time_edit": "so_h",
         "time_interval": 600
-      },
-      "load": {
-        "database": "station_bodega",
-        "measurement": "logger_data"
       }
     },
     {
@@ -29,6 +29,10 @@
     {
       "address": "CD218534",
       "description": "Burns",
+      "load": {
+        "database": "station_burns",
+        "measurement": "logger_data"
+      },
       "query": {
         "decode_columns": "",
         "decode_format": "fp2_27",
@@ -37,15 +41,15 @@
       "transform": {
         "time_edit": "so_h",
         "time_interval": 600
-      },
-      "load": {
-        "database": "station_burns",
-        "measurement": "logger_data"
       }
     },
     {
       "address": "BEC0035C",
       "description": "Chickering",
+      "load": {
+        "database": "station_chickering",
+        "measurement": "logger_data"
+      },
       "query": {
         "decode_columns": "",
         "decode_format": "fp2_27",
@@ -54,10 +58,6 @@
       "transform": {
         "time_edit": "so_h",
         "time_interval": 600
-      },
-      "load": {
-        "database": "station_chickering",
-        "measurement": "logger_data"
       }
     },
     {
@@ -71,6 +71,10 @@
     {
       "address": "CD219642",
       "description": "Granites",
+      "load": {
+        "database": "station_granites",
+        "measurement": "logger_data"
+      },
       "query": {
         "decode_columns": "",
         "decode_format": "fp2_27",
@@ -79,10 +83,6 @@
       "transform": {
         "time_edit": "so_h",
         "time_interval": 600
-      },
-      "load": {
-        "database": "station_granites",
-        "measurement": "logger_data"
       }
     },
     {
@@ -92,6 +92,10 @@
     {
       "address": "CD2175B0",
       "description": "Jepson",
+      "load": {
+        "database": "station_jepson",
+        "measurement": "logger_data"
+      },
       "query": {
         "decode_columns": "",
         "decode_format": "fp2_27",
@@ -100,15 +104,15 @@
       "transform": {
         "time_edit": "so_h",
         "time_interval": 600
-      },
-      "load": {
-        "database": "station_jepson",
-        "measurement": "logger_data"
       }
     },
     {
       "address": "BEC02B62",
       "description": "Stunt",
+      "load": {
+        "database": "station_stunt_ranch",
+        "measurement": "logger_data"
+      },
       "query": {
         "decode_columns": "",
         "decode_format": "fp2_27",
@@ -117,10 +121,6 @@
       "transform": {
         "time_edit": "so_h",
         "time_interval": 600
-      },
-      "load": {
-        "database": "station_stunt_ranch",
-        "measurement": "logger_data"
       }
     },
     {

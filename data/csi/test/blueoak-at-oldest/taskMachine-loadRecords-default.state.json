@@ -2,19 +2,19 @@
   "_id": "taskMachine-loadRecords-default",
   "sources": [
     {
-      "station": "test_blueoak",
-      "table": "TenMin",
-      "options": {
-        "order_option": "collected"
-      },
       "description": "Test Blue Oak",
-      "transform": {
-        "time_edit": "ad_8_h",
-        "reverse_time_edit": "su_8_h"
-      },
       "load": {
         "database": "station_blue_oak",
         "measurement": "ten_minute_data"
+      },
+      "options": {
+        "order_option": "collected"
+      },
+      "station": "test_blueoak",
+      "table": "TenMin",
+      "transform": {
+        "reverse_time_edit": "su_8_h",
+        "time_edit": "ad_8_h"
       }
     }
   ]

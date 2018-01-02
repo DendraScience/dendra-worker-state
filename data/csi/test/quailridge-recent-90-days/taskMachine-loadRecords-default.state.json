@@ -12,7 +12,9 @@
         }
       },
       "options": {
-        "order_option": "collected"
+        "backfill_seconds": 7776000,
+        "order_option": "collected",
+        "start_option": "relative-to-newest"
       },
       "station": "test_quailridge",
       "table": "TenMin",

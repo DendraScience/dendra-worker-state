@@ -2,12 +2,12 @@
   "_id": "taskMachine-archiveRecords-default",
   "sources": [
     {
-      "station": "test_quailridge",
-      "table": "TenMin",
+      "description": "Test Quail Ridge",
       "options": {
         "order_option": "collected"
       },
-      "description": "Test Quail Ridge",
+      "station": "test_quailridge",
+      "table": "TenMin",
       "transform": {
         "time_edit": "ad_8_h"
       }

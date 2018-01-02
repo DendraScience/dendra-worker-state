@@ -2,12 +2,12 @@
   "_id": "taskMachine-archiveRecords-default",
   "sources": [
     {
-      "station": "test_blueoak",
-      "table": "TenMin",
+      "description": "Test Blue Oak",
       "options": {
         "order_option": "collected"
       },
-      "description": "Test Blue Oak",
+      "station": "test_blueoak",
+      "table": "TenMin",
       "transform": {
         "time_edit": "ad_8_h"
       }

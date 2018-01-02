@@ -4,7 +4,7 @@
     {
       "description": "Test Quail Ridge",
       "options": {
-        "backfill_seconds": 1296000,
+        "backfill_seconds": 7776000,
         "order_option": "collected",
         "start_option": "relative-to-newest"
       },
