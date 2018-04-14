@@ -12,10 +12,9 @@
         }
       },
       "options": {
-        "backfill_seconds": 1296000,
-        "order_option": "collected",
-        "start_option": "relative-to-newest"
+        "order_option": "logged-with-holes"
       },
+      "record_missing_threshold": 1920,
       "station": "test_quailridge",
       "table": "TenMin",
       "transform": {

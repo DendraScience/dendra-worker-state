@@ -1,0 +1,25 @@
+{
+  "_id": "taskMachine-importRecords-default",
+  "health_check_threshold": 1200,
+  "source_defaults": {
+    "context": {},
+    "pub_to_subject": "csi.import.v1.out",
+    "spec_options": {
+      "start_option": "at-oldest"
+    }
+  },
+  "sources": [
+    {
+      "context": {},
+      "description": "Test Quail Ridge",
+      "pub_to_subject": "csi.import.v1.out",
+      "spec_options": {
+        "backfill_seconds": 1296000,
+        "order_option": "logged-with-holes",
+        "start_option": "relative-to-newest"
+      },
+      "station": "test_quailridge",
+      "table": "TenMin"
+    }
+  ]
+}

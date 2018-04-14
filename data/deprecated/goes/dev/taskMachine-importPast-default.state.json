@@ -1,0 +1,22 @@
+{
+  "_id": "taskMachine-importPast-default",
+  "health_check_threshold": 1200,
+  "source_defaults": {
+    "context": {},
+    "pub_to_subject": "goes.import.v1.out"
+  },
+  "sources": [
+    {
+      "address": "CD23A62C",
+      "context": {},
+      "description": "Bodega",
+      "pub_to_subject": "goes.import.v1.out"
+    },
+    {
+      "address": "BEC025B0",
+      "context": {},
+      "description": "Burns",
+      "pub_to_subject": "goes.import.v1.out"
+    }
+  ]
+}

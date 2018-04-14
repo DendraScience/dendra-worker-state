@@ -12,7 +12,9 @@
         }
       },
       "options": {
-        "order_option": "collected"
+        "backfill_seconds": 1296000,
+        "order_option": "logged-with-holes",
+        "start_option": "relative-to-newest"
       },
       "station": "test_quailridge",
       "table": "TenMin",

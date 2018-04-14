@@ -1,0 +1,24 @@
+{
+  "_id": "taskMachine-archive-default",
+  "source_defaults": {
+    "sub_to_subject": "generic.import.v1.out"
+  },
+  "sources": [
+    {
+      "description": "CSI records",
+      "preprocessing_expr": [
+        "($ts := payload.timeString;",
+        "$document_id := $join(['csi', payload.station, payload.table, $substring($ts, 0, 10), $substring($ts, 11, 2), $substring($ts, 14, 2)], '-') & '_' & $pad($string(payload.recordNumber), -10, '0');",
+        "$valid := $contains($document_id, /^csi-\\w+-\\w+-\\d{4}-\\d{2}-\\d{2}-\\d{2}-\\d{2}_\\d{10}$/);",
+        "$archive := $valid ? {'document_id': $document_id} : {};",
+        "$ ~> |$|{'archive': $archive}|;)"
+      ],
+      "sub_options": {
+        "ack_wait": 60000,
+        "durable_name": "csi",
+        "max_in_flight": 2
+      },
+      "sub_to_subject": "csi.import.v1.out"
+    }
+  ]
+}
