@@ -44,10 +44,11 @@
       "description": "UCNRS: Archive DCP messages imported from GOES",
       "error_subject": "ucnrs.archive.v1.err.import.goes",
       "preprocessing_expr": [
-        "($addr := payload.header.address ~> $safeName;",
+        "($station := context.station ~> $safeName;",
+        "$table := context.table ~> $safeName;",
         "$time := payload.header.timeDate;",
-        "$docId := $join(['ucnrs', 'goes', $addr, $substring($time, 0, 10), $substring($time, 11, 2)], '-');",
-        "$valid := $contains($docId, /^ucnrs-goes-\\w+-\\d{4}-\\d{2}-\\d{2}-\\d{2}$/);",
+        "$docId := $join(['ucnrs', 'goes', $station, $table, $substring($time, 0, 10), $substring($time, 11, 2)], '-');",
+        "$valid := $contains($docId, /^ucnrs-goes-\\w+-\\w+-\\d{4}-\\d{2}-\\d{2}-\\d{2}$/);",
         "$params := $valid ? {'document_id': $docId} : {};",
         "$ ~> |$|{'params': $params}|;)"
       ],
