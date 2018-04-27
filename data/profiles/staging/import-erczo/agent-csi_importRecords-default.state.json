@@ -7,9 +7,9 @@
     },
     "pub_to_subject": "erczo.import.v1.out.csi",
     "spec_options": {
+      "backfill_seconds": 259200,
       "order_option": "logged-with-holes",
-      "start_option": "at-time",
-      "time_stamp": "2018 04 16 00:00:00.00"
+      "start_option": "relative-to-newest"
     }
   },
   "sources": [
@@ -20,10 +20,6 @@
     {
       "station": "GHQ_CR1000",
       "table": "GHQTable"
-    },
-    {
-      "station": "WSIC_CR1000",
-      "table": "WSIC_Table"
     },
     {
       "station": "RLL1_2_CR1000",
