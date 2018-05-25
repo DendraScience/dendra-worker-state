@@ -6,7 +6,7 @@
       "description": "UCNRS: Write prepared points to Influx",
       "error_subject": "ucnrs.influxWrite.v1.err.prep",
       "sub_options": {
-        "ack_wait": 20000,
+        "ack_wait": 60000,
         "durable_name": "prep",
         "max_in_flight": 100
       },

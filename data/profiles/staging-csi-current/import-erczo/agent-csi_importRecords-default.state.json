@@ -1,88 +1,87 @@
 {
-  "_id": "agent-csi_importRecords-default",
   "bookmarks": [
     {
       "key": "WSHQ_CR1000$AR_HWS",
-      "value": 1524618000000
+      "value": 1524960000000
     },
     {
       "key": "GHQ_CR1000$GHQTable",
-      "value": 1524618000000
+      "value": 1524960000000
     },
     {
       "key": "RLL1_2_CR1000$Table102",
-      "value": 1524753900000
+      "value": 1524960000000
     },
     {
       "key": "RML2_2_CR1000$Table202",
-      "value": 1524754800000
+      "value": 1524960000000
     },
     {
       "key": "RUL3_2_CR1000$Table302",
-      "value": 1524682500000
+      "value": 1524960000000
     },
     {
       "key": "RRL4_1_CR1000$Table401",
-      "value": 1524617700000
+      "value": 1524960000000
     },
     {
       "key": "WSAM_CR1000$AR_RWS",
-      "value": 1524617700000
+      "value": 1524960000000
     },
     {
       "key": "RLL1_1_CR1000$Level101",
-      "value": 1524617700000
+      "value": 1524960000000
     },
     {
       "key": "RML2_1_CR1000$Level201",
-      "value": 1524617700000
+      "value": 1524960000000
     },
     {
       "key": "RUL3_1_CR1000$Level301",
-      "value": 1524617700000
+      "value": 1524960000000
     },
     {
       "key": "WSCP_CR1000$AR_CWS",
-      "value": 1524617700000
+      "value": 1524960000000
     },
     {
       "key": "RML2_3_CR1000$Table203",
-      "value": 1524743400000
+      "value": 1524960000000
     },
     {
       "key": "RUL5_1_CR1000$Table501",
-      "value": 1524758400000
+      "value": 1524960000000
     },
     {
       "key": "WSSM_CR1000$SatTen",
-      "value": 1524711600000
+      "value": 1524960000000
     },
     {
       "key": "WSSM_CR1000$TenMin",
-      "value": 1524711600000
+      "value": 1524960000000
     },
     {
       "key": "WSSR_CR1000$Table1",
-      "value": 1524617700000
+      "value": 1524960000000
     },
     {
       "key": "VMS_CR1000$VMS",
-      "value": 1524617700000
+      "value": 1524960000000
     },
     {
       "key": "L6_WSSS$CS215s",
-      "value": 1524542280000
+      "value": 1524960000000
     },
     {
       "key": "L6_WSSS$CS650s",
-      "value": 1524789900000
+      "value": 1524960000000
     },
     {
       "key": "L6_WSSS$WeatherStationSS",
-      "value": 1524617400000
+      "value": 1524960000000
     }
   ],
-  "health_check_threshold": 660,
+  "health_check_threshold": 1860,
   "source_defaults": {
     "context": {
       "org_slug": "erczo"
@@ -173,5 +172,8 @@
       "station": "L6_WSSS",
       "table": "WeatherStationSS"
     }
-  ]
+  ],
+  "updated_at": "2018-04-27T09:04:41.297Z",
+  "created_at": "2018-04-15T16:06:05.759Z",
+  "_id": "agent-csi_importRecords-default"
 }

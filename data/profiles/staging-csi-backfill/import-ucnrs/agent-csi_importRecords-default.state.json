@@ -1,0 +1,227 @@
+{
+  "_id": "agent-csi_importRecords-default",
+  "health_check_threshold": 1860,
+  "source_defaults": {
+    "context": {
+      "org_slug": "ucnrs"
+    },
+    "pub_to_subject": "ucnrs.import.v1.out.csi",
+    "spec_options": {
+      "order_option": "logged-with-holes"
+    }
+  },
+  "sources": [
+    {
+      "station": "Station1_wx100",
+      "table": "Hydra"
+    },
+    {
+      "station": "Station1_wx100",
+      "table": "Raw"
+    },
+    {
+      "station": "Station1_wx100",
+      "table": "TenMin"
+    },
+    {
+      "station": "Station2_wx",
+      "table": "Table1"
+    },
+    {
+      "station": "Station2_wx",
+      "table": "Table2"
+    },
+    {
+      "station": "Station3_wx",
+      "table": "Hydra"
+    },
+    {
+      "station": "Station3_wx",
+      "table": "Raw"
+    },
+    {
+      "station": "Station3_wx",
+      "table": "TenMin"
+    },
+    {
+      "station": "Station4_wx",
+      "table": "Raw"
+    },
+    {
+      "station": "Station4_wx",
+      "table": "TenMin"
+    },
+    {
+      "station": "Station7_wx",
+      "table": "Hydra"
+    },
+    {
+      "station": "Station7_wx",
+      "table": "Raw"
+    },
+    {
+      "station": "Station7_wx",
+      "table": "TenMin"
+    },
+    {
+      "station": "Station8_wx",
+      "table": "Hydra"
+    },
+    {
+      "station": "Station8_wx",
+      "table": "Raw"
+    },
+    {
+      "station": "Station8_wx",
+      "table": "TenMin"
+    },
+    {
+      "station": "Station9_wx",
+      "table": "Hydra"
+    },
+    {
+      "station": "Station9_wx",
+      "table": "Raw"
+    },
+    {
+      "station": "Station9_wx",
+      "table": "TenMin"
+    },
+    {
+      "station": "Station11_wx",
+      "table": "Hydra"
+    },
+    {
+      "station": "Station11_wx",
+      "table": "Raw"
+    },
+    {
+      "station": "Station11_wx",
+      "table": "TenMin"
+    },
+    {
+      "station": "ucac_angelo",
+      "table": "SatTen"
+    },
+    {
+      "station": "ucac_angelo",
+      "table": "TenMin"
+    },
+    {
+      "station": "ucab_anzaborrego",
+      "table": "Audit"
+    },
+    {
+      "station": "ucab_anzaborrego",
+      "table": "TenMin"
+    },
+    {
+      "station": "whpt_bigcreekwhale",
+      "table": "SatTen"
+    },
+    {
+      "station": "whpt_bigcreekwhale",
+      "table": "TenMin"
+    },
+    {
+      "station": "ucbo_blueoak",
+      "table": "TenMin"
+    },
+    {
+      "station": "ucde_boyddeepcanyon",
+      "table": "TenMin"
+    },
+    {
+      "station": "ucel_elliotchaparral",
+      "table": "TenMin"
+    },
+    {
+      "station": "ucha_hastings",
+      "table": "TenMin"
+    },
+    {
+      "station": "ucja_james",
+      "table": "TenMin"
+    },
+    {
+      "station": "ucmo_motterimrock",
+      "table": "TenMin"
+    },
+    {
+      "station": "ucrm_norrisranchomarino",
+      "table": "Rancho_Audit"
+    },
+    {
+      "station": "ucrm_norrisranchomarino",
+      "table": "TenMin"
+    },
+    {
+      "station": "sagh_sagehen",
+      "table": "Hydra"
+    },
+    {
+      "station": "sagh_sagehen",
+      "table": "Raw"
+    },
+    {
+      "station": "sagh_sagehen",
+      "table": "TenMin"
+    },
+    {
+      "station": "ucsc_santacruzisle",
+      "table": "TenMin"
+    },
+    {
+      "station": "ucse_sedgwick",
+      "table": "Audit"
+    },
+    {
+      "station": "ucse_sedgwick",
+      "table": "TenMin"
+    },
+    {
+      "station": "ucsh_snarl",
+      "table": "TenMin"
+    },
+    {
+      "station": "ucyl_youngerlagoon",
+      "table": "SatTen"
+    },
+    {
+      "station": "ucyl_youngerlagoon",
+      "table": "TenMin"
+    },
+    {
+      "station": "fonr_FortOrd",
+      "table": "Audit"
+    },
+    {
+      "station": "fonr_FortOrd",
+      "table": "TenMin"
+    },
+    {
+      "station": "ucqr_quailridge",
+      "table": "SatTen"
+    },
+    {
+      "station": "ucqr_quailridge",
+      "table": "TenMin"
+    },
+    {
+      "station": "hipk_bigcreekhighlands",
+      "table": "SatTen"
+    },
+    {
+      "station": "hipk_bigcreekhighlands",
+      "table": "TenMin"
+    },
+    {
+      "station": "bcgh_bigcreekgatehouse",
+      "table": "SatTen"
+    },
+    {
+      "station": "bcgh_bigcreekgatehouse",
+      "table": "TenMin"
+    }
+  ]
+}

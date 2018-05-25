@@ -1,5 +1,115 @@
 {
   "_id": "agent-csi_importRecords-default",
+  "bookmarks": [
+    {
+      "key": "Station8_wx$Hydra",
+      "value": 1525046400000
+    },
+    {
+      "key": "Station8_wx$Raw",
+      "value": 1525046400000
+    },
+    {
+      "key": "Station8_wx$TenMin",
+      "value": 1525046400000
+    },
+    {
+      "key": "ucac_angelo$TenMin",
+      "value": 1525046400000
+    },
+    {
+      "key": "ucab_anzaborrego$Audit",
+      "value": 1525046400000
+    },
+    {
+      "key": "ucab_anzaborrego$TenMin",
+      "value": 1525046400000
+    },
+    {
+      "key": "whpt_bigcreekwhale$TenMin",
+      "value": 1525046400000
+    },
+    {
+      "key": "ucbo_blueoak$TenMin",
+      "value": 1525046400000
+    },
+    {
+      "key": "ucde_boyddeepcanyon$TenMin",
+      "value": 1525046400000
+    },
+    {
+      "key": "ucel_elliotchaparral$TenMin",
+      "value": 1525046400000
+    },
+    {
+      "key": "ucha_hastings$TenMin",
+      "value": 1525046400000
+    },
+    {
+      "key": "ucja_james$TenMin",
+      "value": 1525046400000
+    },
+    {
+      "key": "ucmo_motterimrock$TenMin",
+      "value": 1525046400000
+    },
+    {
+      "key": "ucrm_norrisranchomarino$TenMin",
+      "value": 1525046400000
+    },
+    {
+      "key": "sagh_sagehen$Hydra",
+      "value": 1525046400000
+    },
+    {
+      "key": "sagh_sagehen$Raw",
+      "value": 1525046400000
+    },
+    {
+      "key": "sagh_sagehen$TenMin",
+      "value": 1525046400000
+    },
+    {
+      "key": "ucsc_santacruzisle$TenMin",
+      "value": 1525046400000
+    },
+    {
+      "key": "ucse_sedgwick$Audit",
+      "value": 1525046400000
+    },
+    {
+      "key": "ucse_sedgwick$TenMin",
+      "value": 1525046400000
+    },
+    {
+      "key": "ucsh_snarl$TenMin",
+      "value": 1525046400000
+    },
+    {
+      "key": "ucyl_youngerlagoon$TenMin",
+      "value": 1525046400000
+    },
+    {
+      "key": "fonr_FortOrd$Audit",
+      "value": 1525046400000
+    },
+    {
+      "key": "fonr_FortOrd$TenMin",
+      "value": 1525046400000
+    },
+    {
+      "key": "ucqr_quailridge$TenMin",
+      "value": 1525046400000
+    },
+    {
+      "key": "hipk_bigcreekhighlands$TenMin",
+      "value": 1525046400000
+    },
+    {
+      "key": "bcgh_bigcreekgatehouse$TenMin",
+      "value": 1525046400000
+    }
+  ],
   "health_check_threshold": 660,
   "source_defaults": {
     "context": {
@@ -7,9 +117,7 @@
     },
     "pub_to_subject": "ucnrs.import.v1.out.csi",
     "spec_options": {
-      "backfill_seconds": 259200,
-      "order_option": "logged-with-holes",
-      "start_option": "relative-to-newest"
+      "order_option": "logged-with-holes"
     }
   },
   "sources": [

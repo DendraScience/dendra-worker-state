@@ -1,116 +1,115 @@
 {
-  "_id": "agent-csi_importRecords-default",
   "bookmarks": [
     {
       "key": "Station8_wx$Hydra",
-      "value": 1524063000000
+      "value": 1525233600000
     },
     {
       "key": "Station8_wx$Raw",
-      "value": 1524063000000
+      "value": 1525233600000
     },
     {
       "key": "Station8_wx$TenMin",
-      "value": 1524063000000
+      "value": 1525233600000
     },
     {
       "key": "ucac_angelo$TenMin",
-      "value": 1524063000000
+      "value": 1525233600000
     },
     {
       "key": "ucab_anzaborrego$Audit",
-      "value": 1524442875000
+      "value": 1525233600000
     },
     {
       "key": "ucab_anzaborrego$TenMin",
-      "value": 1524062400000
-    },
-    {
-      "key": "ucbo_blueoak$TenMin",
-      "value": 1524062400000
-    },
-    {
-      "key": "ucde_boyddeepcanyon$TenMin",
-      "value": 1524062400000
-    },
-    {
-      "key": "ucel_elliotchaparral$TenMin",
-      "value": 1524062400000
-    },
-    {
-      "key": "ucha_hastings$TenMin",
-      "value": 1524062400000
-    },
-    {
-      "key": "ucja_james$TenMin",
-      "value": 1524062400000
-    },
-    {
-      "key": "ucmo_motterimrock$TenMin",
-      "value": 1524062400000
-    },
-    {
-      "key": "ucrm_norrisranchomarino$TenMin",
-      "value": 1524604200000
-    },
-    {
-      "key": "sagh_sagehen$Hydra",
-      "value": 1524062400000
-    },
-    {
-      "key": "sagh_sagehen$Raw",
-      "value": 1524062400000
-    },
-    {
-      "key": "sagh_sagehen$TenMin",
-      "value": 1524062400000
-    },
-    {
-      "key": "ucsc_santacruzisle$TenMin",
-      "value": 1524062400000
-    },
-    {
-      "key": "ucse_sedgwick$Audit",
-      "value": 1524270075000
-    },
-    {
-      "key": "ucse_sedgwick$TenMin",
-      "value": 1524062400000
-    },
-    {
-      "key": "ucsh_snarl$TenMin",
-      "value": 1524062400000
-    },
-    {
-      "key": "ucyl_youngerlagoon$TenMin",
-      "value": 1524062400000
-    },
-    {
-      "key": "fonr_FortOrd$Audit",
-      "value": 1524442860000
-    },
-    {
-      "key": "fonr_FortOrd$TenMin",
-      "value": 1524062400000
-    },
-    {
-      "key": "ucqr_quailridge$TenMin",
-      "value": 1524062400000
+      "value": 1525233600000
     },
     {
       "key": "whpt_bigcreekwhale$TenMin",
-      "value": 1523905800000
+      "value": 1525046400000
+    },
+    {
+      "key": "ucbo_blueoak$TenMin",
+      "value": 1525233600000
+    },
+    {
+      "key": "ucde_boyddeepcanyon$TenMin",
+      "value": 1525233600000
+    },
+    {
+      "key": "ucel_elliotchaparral$TenMin",
+      "value": 1525377600000
+    },
+    {
+      "key": "ucha_hastings$TenMin",
+      "value": 1525377600000
+    },
+    {
+      "key": "ucja_james$TenMin",
+      "value": 1525377600000
+    },
+    {
+      "key": "ucmo_motterimrock$TenMin",
+      "value": 1525377600000
+    },
+    {
+      "key": "ucrm_norrisranchomarino$TenMin",
+      "value": 1525046400000
+    },
+    {
+      "key": "sagh_sagehen$Hydra",
+      "value": 1525377600000
+    },
+    {
+      "key": "sagh_sagehen$Raw",
+      "value": 1525377600000
+    },
+    {
+      "key": "sagh_sagehen$TenMin",
+      "value": 1525377600000
+    },
+    {
+      "key": "ucsc_santacruzisle$TenMin",
+      "value": 1525377600000
+    },
+    {
+      "key": "ucse_sedgwick$Audit",
+      "value": 1525377600000
+    },
+    {
+      "key": "ucse_sedgwick$TenMin",
+      "value": 1525377600000
+    },
+    {
+      "key": "ucsh_snarl$TenMin",
+      "value": 1525377600000
+    },
+    {
+      "key": "ucyl_youngerlagoon$TenMin",
+      "value": 1525377600000
+    },
+    {
+      "key": "fonr_FortOrd$Audit",
+      "value": 1525233600000
+    },
+    {
+      "key": "fonr_FortOrd$TenMin",
+      "value": 1525233600000
+    },
+    {
+      "key": "ucqr_quailridge$TenMin",
+      "value": 1525233600000
     },
     {
       "key": "hipk_bigcreekhighlands$TenMin",
-      "value": 1523905200000
+      "value": 1525377600000
     },
     {
       "key": "bcgh_bigcreekgatehouse$TenMin",
-      "value": 1523905200000
+      "value": 1525046400000
     }
   ],
-  "health_check_threshold": 660,
+  "health_check_threshold": 1860,
   "source_defaults": {
     "context": {
       "org_slug": "ucnrs"
@@ -122,58 +121,6 @@
   },
   "sources": [
     {
-      "station": "Station1_wx100",
-      "table": "Hydra"
-    },
-    {
-      "station": "Station1_wx100",
-      "table": "Raw"
-    },
-    {
-      "station": "Station1_wx100",
-      "table": "TenMin"
-    },
-    {
-      "station": "Station2_wx",
-      "table": "Table1"
-    },
-    {
-      "station": "Station2_wx",
-      "table": "Table2"
-    },
-    {
-      "station": "Station3_wx",
-      "table": "Hydra"
-    },
-    {
-      "station": "Station3_wx",
-      "table": "Raw"
-    },
-    {
-      "station": "Station3_wx",
-      "table": "TenMin"
-    },
-    {
-      "station": "Station4_wx",
-      "table": "Raw"
-    },
-    {
-      "station": "Station4_wx",
-      "table": "TenMin"
-    },
-    {
-      "station": "Station7_wx",
-      "table": "Hydra"
-    },
-    {
-      "station": "Station7_wx",
-      "table": "Raw"
-    },
-    {
-      "station": "Station7_wx",
-      "table": "TenMin"
-    },
-    {
       "station": "Station8_wx",
       "table": "Hydra"
     },
@@ -184,34 +131,6 @@
     {
       "station": "Station8_wx",
       "table": "TenMin"
-    },
-    {
-      "station": "Station9_wx",
-      "table": "Hydra"
-    },
-    {
-      "station": "Station9_wx",
-      "table": "Raw"
-    },
-    {
-      "station": "Station9_wx",
-      "table": "TenMin"
-    },
-    {
-      "station": "Station11_wx",
-      "table": "Hydra"
-    },
-    {
-      "station": "Station11_wx",
-      "table": "Raw"
-    },
-    {
-      "station": "Station11_wx",
-      "table": "TenMin"
-    },
-    {
-      "station": "ucac_angelo",
-      "table": "SatTen"
     },
     {
       "station": "ucac_angelo",
@@ -224,10 +143,6 @@
     {
       "station": "ucab_anzaborrego",
       "table": "TenMin"
-    },
-    {
-      "station": "whpt_bigcreekwhale",
-      "table": "SatTen"
     },
     {
       "station": "whpt_bigcreekwhale",
@@ -256,10 +171,6 @@
     {
       "station": "ucmo_motterimrock",
       "table": "TenMin"
-    },
-    {
-      "station": "ucrm_norrisranchomarino",
-      "table": "Rancho_Audit"
     },
     {
       "station": "ucrm_norrisranchomarino",
@@ -295,10 +206,6 @@
     },
     {
       "station": "ucyl_youngerlagoon",
-      "table": "SatTen"
-    },
-    {
-      "station": "ucyl_youngerlagoon",
       "table": "TenMin"
     },
     {
@@ -311,27 +218,18 @@
     },
     {
       "station": "ucqr_quailridge",
-      "table": "SatTen"
-    },
-    {
-      "station": "ucqr_quailridge",
       "table": "TenMin"
     },
     {
       "station": "hipk_bigcreekhighlands",
-      "table": "SatTen"
-    },
-    {
-      "station": "hipk_bigcreekhighlands",
       "table": "TenMin"
-    },
-    {
-      "station": "bcgh_bigcreekgatehouse",
-      "table": "SatTen"
     },
     {
       "station": "bcgh_bigcreekgatehouse",
       "table": "TenMin"
     }
-  ]
+  ],
+  "updated_at": "2018-05-02T17:01:01.135Z",
+  "created_at": "2018-04-15T16:06:07.214Z",
+  "_id": "agent-csi_importRecords-default"
 }
