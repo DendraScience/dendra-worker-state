@@ -16,7 +16,7 @@
         "$payload := $reduce(payload.fields, function($p, $c){$merge([$p, {$safeName($c.name, false): $c.value}])}, {});",
         "$ ~> |$|{'context': $context, 'params': $params, 'payload': $payload}|;)"
       ],
-      "pub_to_subject": "ucnrs.patch.v1.out",
+      "pub_to_subject": "ucnrs.patch.v1.out.csi",
       "sub_options": {
         "ack_wait": 60000,
         "durable_name": "import-csi"
@@ -36,7 +36,7 @@
         "$payload := $reduce($keys(payload), function($p, $k){$merge([$p, {$safeName($k, false): $lookup(payload, $k)}])}, {});",
         "$ ~> |$|{'params': $params, 'payload': $payload}|;)"
       ],
-      "pub_to_subject": "ucnrs.patch.v1.out",
+      "pub_to_subject": "ucnrs.patch.v1.out.goes",
       "sub_options": {
         "ack_wait": 60000,
         "durable_name": "decodePseudoBinary"
