@@ -1,0 +1,179 @@
+{
+  "bookmarks": [
+    {
+      "key": "WSHQ_CR1000$AR_HWS",
+      "value": 1532443500000
+    },
+    {
+      "key": "GHQ_CR1000$GHQTable",
+      "value": 1532443500000
+    },
+    {
+      "key": "RLL1_2_CR1000$Table102",
+      "value": 1532443500000
+    },
+    {
+      "key": "RML2_2_CR1000$Table202",
+      "value": 1532443500000
+    },
+    {
+      "key": "RUL3_2_CR1000$Table302",
+      "value": 1532442900000
+    },
+    {
+      "key": "RRL4_1_CR1000$Table401",
+      "value": 1532443500000
+    },
+    {
+      "key": "WSAM_CR1000$AR_RWS",
+      "value": 1532443500000
+    },
+    {
+      "key": "RLL1_1_CR1000$Level101",
+      "value": 1532443500000
+    },
+    {
+      "key": "RML2_1_CR1000$Level201",
+      "value": 1532443500000
+    },
+    {
+      "key": "RUL3_1_CR1000$Level301",
+      "value": 1532443500000
+    },
+    {
+      "key": "WSCP_CR1000$AR_CWS",
+      "value": 1532443500000
+    },
+    {
+      "key": "RML2_3_CR1000$Table203",
+      "value": 1532443500000
+    },
+    {
+      "key": "RUL5_1_CR1000$Table501",
+      "value": 1532443200000
+    },
+    {
+      "key": "WSSM_CR1000$SatTen",
+      "value": 1525863600000
+    },
+    {
+      "key": "WSSM_CR1000$TenMin",
+      "value": 1532443200000
+    },
+    {
+      "key": "WSSR_CR1000$Table1",
+      "value": 1532443500000
+    },
+    {
+      "key": "VMS_CR1000$VMS",
+      "value": 1532443500000
+    },
+    {
+      "key": "L6_WSSS$CS215s",
+      "value": 1532443500000
+    },
+    {
+      "key": "L6_WSSS$CS650s",
+      "value": 1532443500000
+    },
+    {
+      "key": "L6_WSSS$WeatherStationSS",
+      "value": 1532443500000
+    }
+  ],
+  "health_check_threshold": 1860,
+  "source_defaults": {
+    "context": {
+      "org_slug": "erczo"
+    },
+    "pub_to_subject": "erczo.import.v1.out.csi",
+    "spec_options": {
+      "order_option": "logged-with-holes"
+    }
+  },
+  "sources": [
+    {
+      "station": "WSHQ_CR1000",
+      "table": "AR_HWS"
+    },
+    {
+      "station": "GHQ_CR1000",
+      "table": "GHQTable"
+    },
+    {
+      "station": "RLL1_2_CR1000",
+      "table": "Table102"
+    },
+    {
+      "station": "RML2_2_CR1000",
+      "table": "Table202"
+    },
+    {
+      "station": "RUL3_2_CR1000",
+      "table": "Table302"
+    },
+    {
+      "station": "RRL4_1_CR1000",
+      "table": "Table401"
+    },
+    {
+      "station": "WSAM_CR1000",
+      "table": "AR_RWS"
+    },
+    {
+      "station": "RLL1_1_CR1000",
+      "table": "Level101"
+    },
+    {
+      "station": "RML2_1_CR1000",
+      "table": "Level201"
+    },
+    {
+      "station": "RUL3_1_CR1000",
+      "table": "Level301"
+    },
+    {
+      "station": "WSCP_CR1000",
+      "table": "AR_CWS"
+    },
+    {
+      "station": "RML2_3_CR1000",
+      "table": "Table203"
+    },
+    {
+      "station": "RUL5_1_CR1000",
+      "table": "Table501"
+    },
+    {
+      "station": "WSSM_CR1000",
+      "table": "SatTen"
+    },
+    {
+      "station": "WSSM_CR1000",
+      "table": "TenMin"
+    },
+    {
+      "station": "WSSR_CR1000",
+      "table": "Table1"
+    },
+    {
+      "station": "VMS_CR1000",
+      "table": "VMS"
+    },
+    {
+      "station": "L6_WSSS",
+      "table": "CS215s"
+    },
+    {
+      "station": "L6_WSSS",
+      "table": "CS650s"
+    },
+    {
+      "station": "L6_WSSS",
+      "table": "WeatherStationSS"
+    }
+  ],
+  "updated_at": "2018-07-24T22:47:15.248Z",
+  "created_at": "2018-05-06T18:15:01.494Z",
+  "_id": "agent-csi_importRecords-current"
+}
