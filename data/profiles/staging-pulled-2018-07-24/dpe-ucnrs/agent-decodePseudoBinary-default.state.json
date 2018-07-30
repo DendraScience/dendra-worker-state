@@ -1,5 +1,4 @@
 {
-  "_id": "agent-decodePseudoBinary-default",
   "source_defaults": {},
   "sources": [
     {
@@ -233,5 +232,8 @@
         "source$goes"
       ]
     }
-  ]
+  ],
+  "updated_at": "2018-07-11T19:46:38.402Z",
+  "created_at": "2018-07-11T17:10:46.642Z",
+  "_id": "agent-decodePseudoBinary-default"
 }

@@ -1,0 +1,91 @@
+{
+  "health_check_threshold": 1200,
+  "source_defaults": {
+    "pub_to_subject": "ucnrs.import.v1.out.goes"
+  },
+  "sources": [
+    {
+      "address": "BEC0035C",
+      "context": {
+        "org_slug": "ucnrs",
+        "station": "ucca_chickering",
+        "table": "GOES_TenMin"
+      },
+      "description": "Chickering"
+    },
+    {
+      "address": "BEC01EF8",
+      "context": {
+        "org_slug": "ucnrs",
+        "station": "ucgr_granites",
+        "table": "GOES_TenMin"
+      },
+      "description": "Granites"
+    },
+    {
+      "address": "BEC025B0",
+      "context": {
+        "org_slug": "ucnrs",
+        "station": "ucbu_burns",
+        "table": "GOES_TenMin"
+      },
+      "description": "Burns"
+    },
+    {
+      "address": "BEC02B62",
+      "context": {
+        "org_slug": "ucnrs",
+        "station": "ucsr_stuntranch",
+        "table": "GOES_TenMin"
+      },
+      "description": "Stunt"
+    },
+    {
+      "address": "BEC036C6",
+      "context": {
+        "org_slug": "ucnrs",
+        "station": "ucbm_bodega",
+        "table": "GOES_TenMin"
+      },
+      "description": "Bodega"
+    },
+    {
+      "address": "BEC0102A",
+      "context": {
+        "org_slug": "ucnrs",
+        "station": "ucjp_jepson",
+        "table": "GOES_TenMin"
+      },
+      "description": "Jepson"
+    }
+  ],
+  "updated_at": "2018-07-24T22:48:01.811Z",
+  "created_at": "2018-04-27T09:05:07.392Z",
+  "bookmarks": [
+    {
+      "key": "BEC0035C",
+      "value": 1532470860000
+    },
+    {
+      "key": "BEC01EF8",
+      "value": 1532470624000
+    },
+    {
+      "key": "BEC025B0",
+      "value": 1532470639000
+    },
+    {
+      "key": "BEC02B62",
+      "value": 1532470654000
+    },
+    {
+      "key": "BEC036C6",
+      "value": 1532470924000
+    },
+    {
+      "key": "BEC0102A",
+      "value": 1532470039000
+    }
+  ],
+  "_id": "agent-goes_importRecent-current"
+}

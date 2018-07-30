@@ -1,5 +1,4 @@
 {
-  "_id": "agent-csi_importRecords-default",
   "bookmarks": [
     {
       "key": "Station8_wx$Hydra",
@@ -229,5 +228,8 @@
       "station": "bcgh_bigcreekgatehouse",
       "table": "TenMin"
     }
-  ]
+  ],
+  "updated_at": "2018-05-06T06:07:18.714Z",
+  "created_at": "2018-04-15T16:06:07.214Z",
+  "_id": "agent-csi_importRecords-default"
 }
