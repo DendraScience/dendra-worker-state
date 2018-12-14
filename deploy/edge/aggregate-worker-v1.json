@@ -8,7 +8,7 @@
       "queue_group": "dendra.aggregateBuild.v1",
       "sub_options": {
         "ack_wait": 600000,
-        "durable_name": "20181214183716"
+        "durable_name": "20181214183717"
       },
       "sub_to_subject": "dendra.aggregateBuild.v1.req"
     }
