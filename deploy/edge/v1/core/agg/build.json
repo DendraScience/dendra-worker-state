@@ -1,14 +1,15 @@
 {
-  "source_defaults": {},
+  "source_defaults": {
+    "queue_group": "build",
+    "sub_options": {
+      "ack_wait": 600000,
+      "durable_name": "20181226"
+    }
+  },
   "sources": [
     {
       "description": "Build aggregates based on a method",
       "error_subject": "dendra.aggregateBuild.v1.err",
-      "queue_group": "dendra.aggregateBuild.v1",
-      "sub_options": {
-        "ack_wait": 600000,
-        "durable_name": "20181214183720"
-      },
       "sub_to_subject": "dendra.aggregateBuild.v1.req"
     }
   ]
