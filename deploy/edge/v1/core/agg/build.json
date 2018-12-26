@@ -2,7 +2,7 @@
   "source_defaults": {
     "queue_group": "build",
     "sub_options": {
-      "ack_wait": 200000,
+      "ack_wait": 600000,
       "durable_name": "20181226"
     }
   },
