@@ -66,6 +66,10 @@
       "table": "Table501"
     },
     {
+      "station": "WSIC_CR1000",
+      "table": "WSIC_Table"
+    },
+    {
       "station": "WSSM_CR1000",
       "table": "SatTen"
     },
