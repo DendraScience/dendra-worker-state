@@ -1,0 +1,62 @@
+{
+  "health_check_threshold": 1200,
+  "source_defaults": {
+    "pub_to_subject": "ucnrs.import.v1.out.goes"
+  },
+  "sources": [
+    {
+      "address": "BEC0035C",
+      "context": {
+        "org_slug": "ucnrs",
+        "station": "ucca_chickering",
+        "table": "GOES_TenMin"
+      },
+      "description": "Chickering"
+    },
+    {
+      "address": "BEC01EF8",
+      "context": {
+        "org_slug": "ucnrs",
+        "station": "ucgr_granites",
+        "table": "GOES_TenMin"
+      },
+      "description": "Granites"
+    },
+    {
+      "address": "BEC025B0",
+      "context": {
+        "org_slug": "ucnrs",
+        "station": "ucbu_burns",
+        "table": "GOES_TenMin"
+      },
+      "description": "Burns"
+    },
+    {
+      "address": "BEC02B62",
+      "context": {
+        "org_slug": "ucnrs",
+        "station": "ucsr_stuntranch",
+        "table": "GOES_TenMin"
+      },
+      "description": "Stunt"
+    },
+    {
+      "address": "BEC036C6",
+      "context": {
+        "org_slug": "ucnrs",
+        "station": "ucbm_bodega",
+        "table": "GOES_TenMin"
+      },
+      "description": "Bodega"
+    },
+    {
+      "address": "BEC0102A",
+      "context": {
+        "org_slug": "ucnrs",
+        "station": "ucjp_jepson",
+        "table": "GOES_TenMin"
+      },
+      "description": "Jepson"
+    }
+  ]
+}

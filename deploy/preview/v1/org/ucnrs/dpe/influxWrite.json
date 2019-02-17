@@ -1,0 +1,20 @@
+{
+  "source_defaults": {
+    "sub_options": {
+      "ack_wait": 60000,
+      "durable_name": "20190217",
+      "max_in_flight": 100
+    }
+  },
+  "sources": [
+    {
+      "description": "UCNRS: Write prepared points to Influx",
+      "error_subject": "ucnrs.influxWrite.v1.err.prep",
+      "sub_to_subject": "ucnrs.prep.v1.out",
+      "writer_options": {
+        "batch_interval": 5000,
+        "batch_size": 1000
+      }
+    }
+  ]
+}
