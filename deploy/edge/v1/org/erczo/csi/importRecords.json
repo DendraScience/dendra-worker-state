@@ -1,6 +1,6 @@
 {
   "health_check_threshold": 1200,
-  "ldmp_ack_delay": 250,
+  "ldmp_ack_delay": 400,
   "source_defaults": {
     "backfill": {
       "hours": 328
