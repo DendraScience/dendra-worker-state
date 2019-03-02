@@ -9,7 +9,6 @@
   "sources": [
     {
       "description": "Build aggregates based on a method",
-      "error_subject": "dendra.aggregateBuild.v1.err",
       "sub_to_subject": "dendra.aggregateBuild.v1.req"
     }
   ]
