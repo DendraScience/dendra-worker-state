@@ -97,6 +97,10 @@
     {
       "station": "L6_WSSS",
       "table": "WeatherStationSS"
+    },
+    {
+      "station": "rancho_venada_ws",
+      "table": "TableRV"
     }
   ]
 }
