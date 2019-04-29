@@ -100,11 +100,11 @@
     },
     {
       "station": "rancho_venada_ws",
-      "table": "sapflowdatatable"
+      "table": "SapFlowDataTable"
     },
     {
       "station": "rancho_venada_ws",
-      "table": "saptemperaturetable"
+      "table": "SapTemperatureTable"
     },
     {
       "station": "rancho_venada_ws",
