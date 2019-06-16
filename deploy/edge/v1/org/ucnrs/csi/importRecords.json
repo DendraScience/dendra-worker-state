@@ -63,6 +63,10 @@
       "table": "TenMin"
     },
     {
+      "station": "ucmc_mclaughlin",
+      "table": "TenMin"
+    },
+    {
       "station": "ucmo_motterimrock",
       "table": "TenMin"
     },
