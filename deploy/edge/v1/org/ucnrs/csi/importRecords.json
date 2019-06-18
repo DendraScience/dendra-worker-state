@@ -32,10 +32,6 @@
     },
     {
       "station": "ucab_anzaborrego",
-      "table": "Audit"
-    },
-    {
-      "station": "ucab_anzaborrego",
       "table": "TenMin"
     },
     {
@@ -92,10 +88,6 @@
     },
     {
       "station": "ucse_sedgwick",
-      "table": "Audit"
-    },
-    {
-      "station": "ucse_sedgwick",
       "table": "TenMin"
     },
     {
@@ -105,10 +97,6 @@
     {
       "station": "ucyl_youngerlagoon",
       "table": "TenMin"
-    },
-    {
-      "station": "fonr_FortOrd",
-      "table": "Audit"
     },
     {
       "station": "fonr_FortOrd",
