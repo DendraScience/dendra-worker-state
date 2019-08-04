@@ -87,6 +87,22 @@
       "table": "VMS"
     },
     {
+      "station": "L3_3",
+      "table": "TDP_Table"
+    },
+    {
+      "station": "L6_2",
+      "table": "TDP_Table"
+    },
+    {
+      "station": "L6_3",
+      "table": "TDP_Table"
+    },
+    {
+      "station": "L6_4",
+      "table": "TDP_Table"
+    },
+    {
       "station": "L6_WSSS",
       "table": "CS215s"
     },
