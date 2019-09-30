@@ -1,0 +1,54 @@
+{
+  "health_check_threshold": 2400,
+  "ldmp_ack_delay": 400,
+  "source_defaults": {
+    "backfill": {
+      "hours": 328
+    },
+    "context": {
+      "org_slug": "chi"
+    },
+    "pub_to_subject": "chi.import.v1.out.csi",
+    "spec_options": {
+      "order_option": "logged-with-holes"
+    }
+  },
+  "sources": [
+    {
+      "station": "borr_arbor_barn",
+      "table": "TenMin"
+    },
+    {
+      "station": "borr_arbor_relay",
+      "table": "TenMin"
+    },
+    {
+      "station": "borr_arbor_t150_n1",
+      "table": "TenMin"
+    },
+    {
+      "station": "borr_arbor_t150_n2",
+      "table": "TenMin"
+    },
+    {
+      "station": "borr_arbor_t150_n3",
+      "table": "TenMin"
+    },
+    {
+      "station": "borr_arbor_t150_n4",
+      "table": "TenMin"
+    },
+    {
+      "station": "borr_arbor_t150_s1",
+      "table": "TenMin"
+    },
+    {
+      "station": "borr_arbor_t150_s2",
+      "table": "TenMin"
+    },
+    {
+      "station": "borr_arbor_t150_s3",
+      "table": "TenMin"
+    }
+  ]
+}
