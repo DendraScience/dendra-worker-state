@@ -3,7 +3,7 @@
   "ldmp_ack_delay": 400,
   "source_defaults": {
     "backfill": {
-      "hours": 328
+      "days": 100
     },
     "context": {
       "org_slug": "chi"
