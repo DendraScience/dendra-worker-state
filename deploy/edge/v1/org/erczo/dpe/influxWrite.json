@@ -8,6 +8,7 @@
   },
   "sources": [
     {
+      "change_log_subject": "erczo.influxWrite.v2.log",
       "description": "ERCZO: Write prepared points to Influx",
       "error_subject": "erczo.influxWrite.v1.err.prep",
       "sub_to_subject": "erczo.prep.v1.out",

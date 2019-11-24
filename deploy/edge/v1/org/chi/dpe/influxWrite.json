@@ -8,6 +8,7 @@
   },
   "sources": [
     {
+      "change_log_subject": "chi.influxWrite.v2.log",
       "description": "CHI: Write prepared points to Influx",
       "error_subject": "chi.influxWrite.v1.err.prep",
       "sub_to_subject": "chi.prep.v1.out",

@@ -8,6 +8,7 @@
   },
   "sources": [
     {
+      "change_log_subject": "ucnrs.influxWrite.v2.log",
       "description": "UCNRS: Write prepared points to Influx",
       "error_subject": "ucnrs.influxWrite.v1.err.prep",
       "sub_to_subject": "ucnrs.prep.v1.out",
