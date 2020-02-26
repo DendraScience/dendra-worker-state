@@ -15,6 +15,10 @@
   },
   "sources": [
     {
+      "station": "carpenteria",
+      "table": "TenMin"
+    },
+    {
       "station": "Station8_wx",
       "table": "Hydra"
     },

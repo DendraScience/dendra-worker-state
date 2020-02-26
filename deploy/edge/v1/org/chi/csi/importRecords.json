@@ -49,6 +49,18 @@
     {
       "station": "borr_arbor_t150_s3",
       "table": "TenMin"
+    },
+    {
+      "station": "boyd_tower",
+      "table": "TenMin"
+    },
+    {
+      "station": "boyd_upper",
+      "table": "TenMin"
+    },
+    {
+      "station": "boyd_lower",
+      "table": "TenMin"
     }
   ]
 }
