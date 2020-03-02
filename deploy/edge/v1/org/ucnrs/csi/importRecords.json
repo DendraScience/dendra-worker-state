@@ -15,7 +15,15 @@
   },
   "sources": [
     {
+      "station": "bodega",
+      "table": "TenMin"
+    },
+    {
       "station": "carpenteria",
+      "table": "TenMin"
+    },
+    {
+      "station": "point_reyes",
       "table": "TenMin"
     },
     {
