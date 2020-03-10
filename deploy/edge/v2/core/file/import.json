@@ -1,7 +1,7 @@
 {
   "source_defaults": {
     "sub_options": {
-      "ack_wait": 300000,
+      "ack_wait": 900000,
       "durable_name": "20200309"
     }
   },
