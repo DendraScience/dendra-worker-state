@@ -1,0 +1,15 @@
+{
+  "source_defaults": {
+    "sub_options": {
+      "ack_wait": 300000,
+      "durable_name": "20200309"
+    }
+  },
+  "sources": [
+    {
+      "description": "Import files based on a method",
+      "pub_to_subject": "{org_slug}.import.v1.out.file",
+      "sub_to_subject": "dendra.fileImport.v2.req.{hostOrdinal}"
+    }
+  ]
+}
