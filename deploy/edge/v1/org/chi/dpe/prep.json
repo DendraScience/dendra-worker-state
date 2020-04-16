@@ -8,7 +8,7 @@
   },
   "sources": [
     {
-      "description": "CHI: Prepare payload for writing to Influx",
+      "description": "CHI: Prepare patched payload for writing to Influx",
       "error_subject": "chi.prep.v1.err.patch",
       "preprocessing_expr": [
         "($org := context.org_slug ~> $safeName;",
