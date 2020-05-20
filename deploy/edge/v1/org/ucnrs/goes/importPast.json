@@ -44,10 +44,10 @@
       "address": "BEC036C6",
       "context": {
         "org_slug": "ucnrs",
-        "station": "ucbm_bodega",
+        "station": "anzaborrego_sentenac",
         "table": "GOES_TenMin"
       },
-      "description": "Bodega"
+      "description": "Sentenac"
     },
     {
       "address": "BEC0102A",
