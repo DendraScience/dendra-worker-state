@@ -31,11 +31,19 @@
       "table": "TenMin"
     },
     {
+      "station": "borr_arbor_t150_n2-2",
+      "table": "TenMin"
+    },
+    {
       "station": "borr_arbor_t150_n3",
       "table": "TenMin"
     },
     {
       "station": "borr_arbor_t150_n4",
+      "table": "TenMin"
+    },
+    {
+      "station": "borr_arbor_t150_n4-2",
       "table": "TenMin"
     },
     {
