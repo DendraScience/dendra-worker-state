@@ -125,6 +125,10 @@
     {
       "station": "bcgh_bigcreekgatehouse",
       "table": "TenMin"
+    },
+    {
+      "station": "wtmbarc_barcroft",
+      "table": "TenMin"
     }
   ]
 }
