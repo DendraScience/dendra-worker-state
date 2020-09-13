@@ -2,13 +2,12 @@
   "source_defaults": {
     "sub_options": {
       "ack_wait": 60000,
-      "durable_name": "202009081957",
+      "durable_name": "20200908",
       "max_in_flight": 2000
     }
   },
   "sources": [
     {
-      "_change_log_subject": "prep.influxWrite.v2.log",
       "description": "PREP: Write prepared points to Influx",
       "error_subject": "prep.influxWrite.v1.err.prep",
       "sub_to_subject": "prep.prep.v1.out",
