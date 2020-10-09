@@ -127,7 +127,7 @@
       "table": "TableRV"
     },
     {
-      "station": "VMS_SM1",
+      "station": "VMS-SM1",
       "table": "SoilMoistureLower"
     }
   ]
