@@ -1,5 +1,11 @@
 {
+  "metrics": {
+    "expiry_seconds": 86400
+  },
   "source_defaults": {
+    "metrics_groups": {
+      "uploads": "context.upload_id"
+    },
     "sub_options": {
       "ack_wait": 60000,
       "durable_name": "20200916",
