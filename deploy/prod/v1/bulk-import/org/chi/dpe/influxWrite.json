@@ -1,5 +1,11 @@
 {
+  "metrics": {
+    "expiry_seconds": 86400
+  },
   "source_defaults": {
+    "metrics_groups": {
+      "uploads": "context.upload_id"
+    },
     "sub_options": {
       "ack_wait": 60000,
       "durable_name": "20200916",
@@ -10,6 +16,7 @@
   "sources": [
     {
       "description": "CHI: Write prepared points to Influx",
+      "error_subject": "chi.influxWrite.v1.err.prep",
       "ignore_errors": true,
       "sub_to_subject": "chi.prep.v1.out",
       "writer_options": {

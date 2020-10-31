@@ -16,6 +16,7 @@
   "sources": [
     {
       "description": "ERCZO: Write prepared points to Influx",
+      "error_subject": "erczo.influxWrite.v1.err.prep",
       "ignore_errors": true,
       "sub_to_subject": "erczo.prep.v1.out",
       "writer_options": {

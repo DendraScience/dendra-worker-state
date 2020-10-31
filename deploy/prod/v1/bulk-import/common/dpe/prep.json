@@ -10,6 +10,7 @@
   "sources": [
     {
       "description": "CHI: Prepare file import payload for writing to Influx",
+      "error_subject": "chi.prep.v1.err.import.file",
       "ignore_errors": true,
       "preprocessing_expr": [
         "($org := context.org_slug ~> $safeName;",
@@ -29,6 +30,7 @@
     },
     {
       "description": "ERCZO: Prepare file import payload for writing to Influx",
+      "error_subject": "erczo.prep.v1.err.import.file",
       "ignore_errors": true,
       "preprocessing_expr": [
         "($org := context.org_slug ~> $safeName;",
@@ -48,6 +50,7 @@
     },
     {
       "description": "PREP: Prepare file import payload for writing to Influx",
+      "error_subject": "prep.prep.v1.err.import.file",
       "ignore_errors": true,
       "preprocessing_expr": [
         "($org := context.org_slug ~> $safeName;",
