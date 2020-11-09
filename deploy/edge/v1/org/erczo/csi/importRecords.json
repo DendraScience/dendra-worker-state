@@ -129,6 +129,10 @@
     {
       "station": "VMS-SM1",
       "table": "SoilMoistureLower"
+    },
+    {
+      "station": "VMS-SM2",
+      "table": "SoilMoisturePit3"
     }
   ]
 }
