@@ -80,7 +80,7 @@
         "$time := payload.time;",
         "$params := {'tags': $tags, 'time': $time};",
         "$options := {'database': 'station_' & $station, 'precision': 'ms'};",
-        "$fields := payload ~> $deleteNulls ~> $deleteKeys(['time']);",
+        "$fields := payload ~> $deleteNulls ~> $deleteKeys(['time']) ~> $mapValues(function($v, $k) { $contains($k, /_flag/i) ? $string($v) : $v });",
         "$points := [{'fields': $fields, 'measurement': 'source_' & $table, 'time': $time}];",
         "$payload := {'options': $options, 'points': $points};",
         "$ ~> |$|{'params': $params, 'payload': $payload}|;)"

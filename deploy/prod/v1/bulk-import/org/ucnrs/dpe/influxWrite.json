@@ -9,7 +9,8 @@
     "sub_options": {
       "ack_wait": 120000,
       "durable_name": "20200916",
-      "max_in_flight": 1000
+      "max_in_flight": 1000,
+      "start_at_time_delta": 0
     }
   },
   "sources": [
