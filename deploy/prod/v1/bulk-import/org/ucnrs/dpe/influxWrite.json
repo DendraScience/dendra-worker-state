@@ -4,8 +4,7 @@
   },
   "source_defaults": {
     "error_sub_options": {
-      "max_in_flight": 1,
-      "start_at_time_delta": 0
+      "max_in_flight": 10
     },
     "metrics_groups": {
       "uploads": "context.upload_id"
@@ -20,6 +19,7 @@
     {
       "description": "UCNRS: Write prepared points to Influx",
       "error_subject": "ucnrs.influxWrite.v1.err.prep",
+      "ignore_before_date": "2020-11-24T19:15:00.000Z",
       "sub_to_subject": "ucnrs.prep.v1.out",
       "writer_options": {
         "batch_interval": 5000,
