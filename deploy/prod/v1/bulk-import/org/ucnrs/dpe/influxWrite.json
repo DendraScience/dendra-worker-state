@@ -4,6 +4,7 @@
   },
   "source_defaults": {
     "error_sub_options": {
+      "max_in_flight": 1,
       "start_at_time_delta": 0
     },
     "metrics_groups": {
