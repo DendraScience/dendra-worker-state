@@ -3,14 +3,16 @@
     "expiry_seconds": 86400
   },
   "source_defaults": {
+    "error_sub_options": {
+      "start_at_time_delta": 0
+    },
     "metrics_groups": {
       "uploads": "context.upload_id"
     },
     "sub_options": {
       "ack_wait": 120000,
       "durable_name": "20200916",
-      "max_in_flight": 1000,
-      "start_at_time_delta": 0
+      "max_in_flight": 1000
     }
   },
   "sources": [
