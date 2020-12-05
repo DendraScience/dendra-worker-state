@@ -27,24 +27,56 @@
       "table": "TenMin"
     },
     {
+      "station": "borr_arbor_t150_n1",
+      "table": "HPV_06"
+    },
+    {
       "station": "borr_arbor_t150_n2",
       "table": "TenMin"
+    },
+    {
+      "station": "borr_arbor_t150_n2",
+      "table": "VWC"
+    },
+    {
+      "station": "borr_arbor_t150_n2",
+      "table": "HPV_06"
     },
     {
       "station": "borr_arbor_t150_n2-2",
       "table": "TenMin"
     },
     {
+      "station": "borr_arbor_t150_n2-2",
+      "table": "HPV_06"
+    },
+    {
       "station": "borr_arbor_t150_n3",
       "table": "TenMin"
+    },
+    {
+      "station": "borr_arbor_t150_n3",
+      "table": "HPV_06"
     },
     {
       "station": "borr_arbor_t150_n4",
       "table": "TenMin"
     },
     {
+      "station": "borr_arbor_t150_n4",
+      "table": "VWC"
+    },
+    {
+      "station": "borr_arbor_t150_n4",
+      "table": "HPV_06"
+    },
+    {
       "station": "borr_arbor_t150_n4-2",
       "table": "TenMin"
+    },
+    {
+      "station": "borr_arbor_t150_n4-2",
+      "table": "HPV_06"
     },
     {
       "station": "borr_arbor_t150_s1",
@@ -53,6 +85,10 @@
     {
       "station": "borr_arbor_t150_s2",
       "table": "TenMin"
+    },
+    {
+      "station": "borr_arbor_t150_s2",
+      "table": "VWC"
     },
     {
       "station": "borr_arbor_t150_s3",
