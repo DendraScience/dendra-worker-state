@@ -60,8 +60,10 @@
       "table": "TenMin"
     },
     {
-      "backfill": {
-        "days": 35
+      "spec_options": {
+        "order_option": "logged-with-holes",
+        "start_option": "at-time",
+        "time_stamp": "2020 11 11 00:00:00.00"
       },
       "station": "ucel_elliotchaparral",
       "table": "TenMin"
