@@ -1,5 +1,6 @@
 {
-  "health_check_threshold": 1860,
+  "_health_check_threshold": 1860,
+  "health_check_threshold": 660,
   "ldmp_ack_delay": 400,
   "source_defaults": {
     "backfill": {
@@ -59,6 +60,9 @@
       "table": "TenMin"
     },
     {
+      "backfill": {
+        "days": 35
+      },
       "station": "ucel_elliotchaparral",
       "table": "TenMin"
     },
