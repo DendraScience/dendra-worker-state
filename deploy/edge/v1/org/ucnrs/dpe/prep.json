@@ -17,9 +17,9 @@
         "$tags := ['org' & '$' & $org, 'station' & '$' & $station, 'table' & '$' & $table];",
         "$time := payload.time;",
         "$params := {'tags': $tags, 'time': $time};",
-        "$options := {'database': 'station_' & $station, 'precision': 'ms'};",
+        "$options := {'database': context.is_invalid ? 'invalid_records' : 'station_' & $station, 'precision': 'ms'};",
         "$fields := payload ~> $deleteNulls ~> $deleteKeys(['time']);",
-        "$points := [{'fields': $fields, 'measurement': 'source_' & $table, 'time': $time}];",
+        "$points := [{'fields': $fields, 'measurement': context.is_invalid ? 'station_' & $station & '_source_' & $table : 'source_' & $table, 'time': $time}];",
         "$payload := {'options': $options, 'points': $points};",
         "$ ~> |$|{'params': $params, 'payload': $payload}|;)"
       ],

@@ -12,11 +12,12 @@
       "error_subject": "ucnrs.patch.v1.err.import.csi",
       "preprocessing_expr": [
         "($org := context.org_slug ~> $safeName;",
+        "$is_invalid := $not($contains(payload.timeString, /^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:00$/));",
         "$station := payload.station ~> $safeName;",
         "$table := payload.table ~> $safeName;",
         "$tags := ['org' & '$' & $org, 'source$csi', 'station' & '$' & $station, 'table' & '$' & $table];",
         "$time := payload.timeString & 'Z';",
-        "$context := $merge([context, {'station': payload.station, 'table': payload.table}]);",
+        "$context := $merge([context, {'station': payload.station, 'table': payload.table, 'is_invalid': $is_invalid}]);",
         "$params := {'tags': $tags, 'time': $time};",
         "$payload := $reduce(payload.fields, function($p, $c){$merge([$p, {$safeName($c.name, false): $c.value}])}, {});",
         "$ ~> |$|{'context': $context, 'params': $params, 'payload': $payload}|;)"
