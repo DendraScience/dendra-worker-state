@@ -127,6 +127,10 @@
       "table": "TenMin"
     },
     {
+      "station": "valentine",
+      "table": "TenMin"
+    },
+    {
       "station": "wtmbarc_barcroft",
       "table": "TenMin"
     }
