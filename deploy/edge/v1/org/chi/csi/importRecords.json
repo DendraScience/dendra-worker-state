@@ -155,19 +155,19 @@
       "table": "SoilWater"
     },
     {
-      "station": "vesr_meadow",
+      "station": "VESR_Meadow",
       "table": "TenMin"
     },
     {
-      "station": "vesr_meadow",
+      "station": "VESR_Meadow",
       "table": "VWC"
     },
     {
-      "station": "vesr_sagebrushhill",
+      "station": "VESR_SagebrushHill",
       "table": "TenMin"
     },
     {
-      "station": "vesr_sagebrushhill",
+      "station": "VESR_SagebrushHill",
       "table": "VWC"
     }
   ]
