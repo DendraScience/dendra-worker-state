@@ -153,6 +153,22 @@
     {
       "station": "sci_pozo_sm04",
       "table": "SoilWater"
+    },
+    {
+      "station": "vesr_meadow",
+      "table": "TenMin"
+    },
+    {
+      "station": "vesr_meadow",
+      "table": "VWC"
+    },
+    {
+      "station": "vesr_sagebrushhill",
+      "table": "TenMin"
+    },
+    {
+      "station": "vesr_sagebrushhill",
+      "table": "VWC"
     }
   ]
 }
