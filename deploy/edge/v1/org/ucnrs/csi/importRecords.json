@@ -1,5 +1,5 @@
 {
-  "health_check_threshold": 1860,
+  "health_check_threshold": 780,
   "ldmp_ack_delay": 400,
   "source_defaults": {
     "backfill": {
