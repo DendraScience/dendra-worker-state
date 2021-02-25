@@ -8,41 +8,24 @@
   },
   "sources": [
     {
-      "description": "TNC: Prepare patched payload for writing to Influx",
-      "error_subject": "tnc.prep.v1.err.patch",
+      "error_subject": "tnc.prep.v1.err.webhook",
+      "description": "TNC: Prepare webhook data for writing to Influx",
       "preprocessing_expr": [
-        "($org := context.org_slug ~> $safeName;",
-        "$station := context.station ~> $safeName;",
-        "$table := context.table ~> $safeName;",
-        "$tags := ['org' & '$' & $org, 'station' & '$' & $station, 'table' & '$' & $table];",
-        "$time := payload.time;",
+        "($app := [data.end_device_ids.application_ids.application_id, 'unknown'][0] ~> $safeName;",
+        "$device := [data.end_device_ids.device_id, 'unknown'][0] ~> $safeName;",
+        "$table := [data.uplink_message.decoded_payload.parsed.table, 'unknown'][0] ~> $safeName;",
+        "$tags := ['app' & '$' & $app, 'device' & '$' & $device, 'table' & '$' & $table];",
+        "$time := [data.uplink_message.decoded_payload.parsed.time][0];",
         "$params := {'tags': $tags, 'time': $time};",
-        "$options := {'database': 'station_' & $station, 'precision': 'ms'};",
-        "$fields := payload ~> $deleteNulls ~> $deleteKeys(['time']);",
+        "$options := {'database': 'app_' & $app & '__device_' & $device, 'precision': 'ms'};",
+        "$fields := [data.uplink_message.decoded_payload.parsed.fields, {}][0] ~> $deleteNulls ~> $deleteKeys(['time']);",
         "$points := [{'fields': $fields, 'measurement': 'source_' & $table, 'time': $time}];",
+        "$context := {'app': $app, 'device': $device, 'table': $table};",
         "$payload := {'options': $options, 'points': $points};",
-        "$ ~> |$|{'params': $params, 'payload': $payload}|;)"
+        "{'context': $context, 'params': $params, 'payload': $payload};)"
       ],
-      "pub_to_subject": "chi.prep.v1.out",
-      "sub_to_subject": "chi.patch.v1.out"
-    },
-    {
-      "description": "CHI: Prepare file import payload for writing to Influx",
-      "preprocessing_expr": [
-        "($org := context.org_slug ~> $safeName;",
-        "$station := context.station ~> $safeName;",
-        "$table := context.table ~> $safeName;",
-        "$tags := ['org' & '$' & $org, 'station' & '$' & $station, 'table' & '$' & $table];",
-        "$time := payload.time;",
-        "$params := {'tags': $tags, 'time': $time};",
-        "$options := {'database': 'station_' & $station, 'precision': 'ms'};",
-        "$fields := payload ~> $deleteNulls ~> $deleteKeys(['time']);",
-        "$points := [{'fields': $fields, 'measurement': 'source_' & $table, 'time': $time}];",
-        "$payload := {'options': $options, 'points': $points};",
-        "$ ~> |$|{'params': $params, 'payload': $payload}|;)"
-      ],
-      "pub_to_subject": "chi.prep.v1.out",
-      "sub_to_subject": "chi.import.v1.out.file"
+      "pub_to_subject": "tnc.prep.v1.out",
+      "sub_to_subject": "tnc.import.v1.out.webhook"
     }
   ],
   "static_rules": [
