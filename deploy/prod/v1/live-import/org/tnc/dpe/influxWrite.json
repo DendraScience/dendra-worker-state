@@ -10,6 +10,7 @@
     {
       "description": "TNC: Write prepared points to Influx",
       "error_subject": "tnc.influxWrite.v1.err.prep",
+      "ignore_before_date": "2021-02-26T02:37:24.718Z",
       "sub_to_subject": "tnc.prep.v1.out",
       "writer_options": {
         "batch_interval": 5000,
