@@ -16,7 +16,7 @@
         "$table := [uplink_message.decoded_payload.parsed.table, 'unknown'][0] ~> $safeName;",
         "$tags := ['app' & '$' & $app, 'device' & '$' & $device, 'table' & '$' & $table];",
         "$time := [uplink_message.decoded_payload.parsed.time][0];",
-        "$options := {'database': 'app_' & $app & '__device_' & $device, 'precision': 'ms'};",
+        "$options := {'database': 'device_' & $device, 'precision': 'ms'};",
         "$fields := [uplink_message.decoded_payload.parsed.fields, {}][0] ~> $deleteNulls ~> $deleteKeys(['time']);",
         "$points := [{'fields': $fields, 'measurement': 'source_' & $table, 'time': $time}];",
         "$context := {'app': $app, 'device': $device, 'table': $table};",
