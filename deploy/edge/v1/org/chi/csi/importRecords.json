@@ -115,6 +115,10 @@
       "table": "SoilWater"
     },
     {
+      "station": "sci_pozo_relay",
+      "table": "WindSonic"
+    },
+    {
       "station": "sci_pozo_sm01",
       "table": "TenMin"
     },
