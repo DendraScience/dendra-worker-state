@@ -11,13 +11,15 @@
       "description": "TNC: Archive webhook data",
       "error_subject": "tnc.archive.v1.err.import.webhook",
       "preprocessing_expr": [
-        "($device := [end_device_ids.device_id, 'unknown'][0] ~> $safeName;",
+        "($app := [end_device_ids.application_ids.application_id, 'unknown'][0] ~> $safeName;",
+        "$device := [end_device_ids.device_id, 'unknown'][0] ~> $safeName;",
         "$table := [uplink_message.decoded_payload.parsed.table, 'unknown'][0] ~> $safeName;",
         "$time := uplink_message.received_at;",
         "$docId := $join(['tnc', 'webhook', $device, $table, $substring($time, 0, 10), $substring($time, 11, 2), $substring($time, 14, 2)], '-');",
         "$valid := $contains($docId, /^tnc-webhook-\\w+-\\w+-\\d{4}-\\d{2}-\\d{2}-\\d{2}-\\d{2}$/);",
+        "$context := {'app': $app, 'device': $device, 'table': $table};",
         "$params := $valid ? {'document_id': $docId} : {};",
-        "$ ~> |$|{'params': $params}|;)"
+        "{'context': $context, 'params': $params, 'payload': $};)"
       ],
       "sub_to_subject": "tnc.import.v1.out.webhook"
     }
