@@ -41,7 +41,7 @@
           "$sts := $ar ~> $bitShiftRight(24) ~> $bitAnd(255);",
           "$dt := $yr & '-' & $mo & '-' & $da & ' ' & $hr & ':' & $mi;",
           "$time := $toMillis($dt, '[Y0001]-[M]-[D] [H]:[m]');",
-          "{'time': $time, 'batt': $batt, 'temp': $temp, 'depth': $depth, 'sts': $sts};"
+          "{'time': $time, 'batt': $batt, 'temp': $temp, 'depth': $depth, 'sts': $sts};)"
         ]
       },
       "ends_before": "2100-01-01T00:00:00.000Z",
