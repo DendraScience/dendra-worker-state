@@ -28,7 +28,7 @@
       "begins_at": "2000-01-01T00:00:00.000Z",
       "definition": {
         "transform_expr": [
-          "($data := payload.bodyParts[1].value.data;",
+          "($data := bodyParts[1].value.data;",
           "$ar := $bitShiftLeft($data[3], 24) + $bitShiftLeft($data[2], 16) + $bitShiftLeft($data[1], 8) + $data[0];",
           "$batt := $bitShiftLeft($data[5], 8) + $data[4];",
           "$temp := ($bitShiftLeft($data[7], 24) ~> $bitShiftRightSigned(16)) + $data[6];",
@@ -41,8 +41,7 @@
           "$sts := $ar ~> $bitShiftRight(24) ~> $bitAnd(255);",
           "$dt := $yr & '-' & $mo & '-' & $da & ' ' & $hr & ':' & $mi;",
           "$time := $toMillis($dt, '[Y0001]-[M]-[D] [H]:[m]');",
-          "$payload := {'time': $time, 'batt': $batt, 'temp': $temp, 'depth': $depth, 'sts': $sts};",
-          "$ ~> |$|{'payload': $payload}|)"
+          "{'time': $time, 'batt': $batt, 'temp': $temp, 'depth': $depth, 'sts': $sts};"
         ]
       },
       "ends_before": "2100-01-01T00:00:00.000Z",
