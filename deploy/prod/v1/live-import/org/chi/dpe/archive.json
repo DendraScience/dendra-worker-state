@@ -11,8 +11,8 @@
       "description": "CHI: Archive Iridium SBD messages from email",
       "error_subject": "chi.archive.v1.err.import.email.iridium.sbd",
       "preprocessing_expr": [
-        "($device := payload.device ~> $safeName;",
-        "$table := payload.table ~> $safeName;",
+        "($device := context.device ~> $safeName;",
+        "$table := context.table ~> $safeName;",
         "$time := payload.envelope.date;",
         "$docId := $join(['chi', 'email', $device, $table, $substring($time, 0, 10), $substring($time, 11, 2), $substring($time, 14, 2)], '-');",
         "$valid := $contains($docId, /^chi-email-\\w+-\\w+-\\d{4}-\\d{2}-\\d{2}-\\d{2}-\\d{2}$/);",
