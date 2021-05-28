@@ -1,0 +1,7 @@
+{
+  "health_check_threshold": 1200,
+  "source_defaults": {
+    "pub_to_subject": "tnc.import.v1.out.goes"
+  },
+  "sources": []
+}
