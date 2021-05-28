@@ -1,0 +1,17 @@
+{
+  "health_check_threshold": 1860,
+  "ldmp_ack_delay": 400,
+  "source_defaults": {
+    "backfill": {
+      "days": 100
+    },
+    "context": {
+      "org_slug": "cdfw"
+    },
+    "pub_to_subject": "cdfw.import.v1.out.csi",
+    "spec_options": {
+      "order_option": "logged-with-holes"
+    }
+  },
+  "sources": []
+}

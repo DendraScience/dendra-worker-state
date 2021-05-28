@@ -3,6 +3,7 @@
     "expiry_seconds": 86400
   },
   "source_defaults": {
+    "ignore_errors": true,
     "metrics_groups": {
       "uploads": "context.upload_id"
     },
