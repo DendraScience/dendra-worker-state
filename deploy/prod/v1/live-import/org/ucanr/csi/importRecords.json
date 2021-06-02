@@ -3,7 +3,7 @@
   "ldmp_ack_delay": 400,
   "source_defaults": {
     "backfill": {
-      "days": 100
+      "days": 400
     },
     "context": {
       "org_slug": "ucanr"
@@ -13,5 +13,22 @@
       "order_option": "logged-with-holes"
     }
   },
-  "sources": []
+  "sources": [
+    {
+      "station": "DL_Climate_1",
+      "table": "fifteen_min_avg"
+    },
+    {
+      "station": "DL_Climate_2",
+      "table": "fifteen_min_avg"
+    },
+    {
+      "station": "DL_Climate_3",
+      "table": "fifteen_min_avg"
+    },
+    {
+      "station": "DL_Forage",
+      "table": "Table1"
+    }
+  ]
 }
