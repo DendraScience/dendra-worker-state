@@ -5,7 +5,7 @@
     {
         "backfill":
         {
-            "days": 100
+            "days": 720
         },
         "context":
         {
@@ -18,5 +18,118 @@
         }
     },
     "sources":
-    []
+    [
+        {
+            "station": "Fog",
+            "table": "Min15"
+        },
+        {
+            "station": "Redwood_Pond_MET",
+            "table": "Min15"
+        },
+        {
+            "station": "Rogers_MET",
+            "table": "Min15"
+        },
+        {
+            "station": "Upper_Martin_MET",
+            "table": "Min15"
+        },
+        {
+            "station": "Lower_Martin_MET",
+            "table": "Min15"
+        },
+        {
+            "station": "Plot_1301",
+            "table": "Min15"
+        },
+        {
+            "station": "Plot_1307",
+            "table": "Min15"
+        },
+        {
+            "station": "Plot_1309",
+            "table": "Min15"
+        },
+        {
+            "station": "Plot_1310",
+            "table": "Min15"
+        },
+        {
+            "station": "Plot_1312",
+            "table": "Min15"
+        },
+        {
+            "station": "Plot_1315",
+            "table": "Min15"
+        },
+        {
+            "station": "Plot_1321",
+            "table": "Min15"
+        },
+        {
+            "station": "Plot_1322",
+            "table": "Min15"
+        },
+        {
+            "station": "Plot_1324",
+            "table": "Min15"
+        },
+        {
+            "station": "Plot_1325",
+            "table": "Min15"
+        },
+        {
+            "station": "Plot_1332",
+            "table": "Min15"
+        },
+        {
+            "station": "Plot_1335",
+            "table": "Min15"
+        },
+        {
+            "station": "Plot_1338",
+            "table": "Min15"
+        },
+        {
+            "station": "Plot_1339",
+            "table": "Min15"
+        },
+        {
+            "station": "Plot_1340",
+            "table": "Min15"
+        },
+        {
+            "station": "Plot_1344",
+            "table": "Min15"
+        },
+        {
+            "station": "Plot_1349",
+            "table": "Min15"
+        },
+        {
+            "station": "Oak_soil",
+            "table": "Pepper_Oak_Soil"
+        },
+        {
+            "station": "Oak_soil",
+            "table": "Oak_LWS"
+        },
+        {
+            "station": "Grass_MET",
+            "table": "Bechtel"
+        },
+        {
+            "station": "Grass_MET",
+            "table": "Bechtel_Davis"
+        },
+        {
+            "station": "Grass_MET",
+            "table": "Bechtel_soilm"
+        },
+        {
+            "station": "Grass_MET",
+            "table": "Bechtel_TE525"
+        }
+    ]
 }
