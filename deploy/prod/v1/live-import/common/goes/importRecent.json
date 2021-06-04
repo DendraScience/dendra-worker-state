@@ -3,5 +3,17 @@
     "source_defaults":
     {},
     "sources":
-    []
+    [
+        {
+            "address": "C14015D4",
+            "context":
+            {
+                "org_slug": "tnc",
+                "station": "TNC_Dangermond_Oaks",
+                "table": "GOES_TenMin"
+            },
+            "description": "TNC Dangermond Oaks",
+            "pub_to_subject": "tnc.import.v1.out.goes"
+        }
+    ]
 }
