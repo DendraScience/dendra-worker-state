@@ -22,6 +22,10 @@
         {
             "station": "UpperButteBasin",
             "table": "Min10"
+        },
+        {
+            "station": "ShastaValley",
+            "table": "Min10"
         }
     ]
 }
