@@ -21,7 +21,7 @@
     [
         {
             "station": "Fog",
-            "table": "PWD_Min15FOG_19"
+            "table": "PWD_15minFOG_19"
         },
         {
             "station": "Fog",
