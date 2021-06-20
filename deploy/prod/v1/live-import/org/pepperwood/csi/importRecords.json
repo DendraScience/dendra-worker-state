@@ -24,20 +24,40 @@
             "table": "PWD_Min15FOG_19"
         },
         {
+            "station": "Fog",
+            "table": "Table2"
+        },
+        {
             "station": "Redwood_Pond_MET",
             "table": "Min15"
+        },
+        {
+            "station": "Redwood_Pond_MET",
+            "table": "Hr"
         },
         {
             "station": "Rogers_MET",
             "table": "Min15"
         },
         {
+            "station": "Rogers_MET",
+            "table": "Hr"
+        },
+        {
             "station": "Upper_Martin_MET",
             "table": "Min15"
         },
         {
+            "station": "Upper_Martin_MET",
+            "table": "Hr"
+        },
+        {
             "station": "Lower_Martin_MET",
             "table": "Min15"
+        },
+        {
+            "station": "Lower_Martin_MET",
+            "table": "Hr"
         },
         {
             "station": "Plot_1301",
@@ -130,6 +150,10 @@
         {
             "station": "Grass_MET",
             "table": "Bechtel_TE525"
+        },
+        {
+            "station": "Grass_MET",
+            "table": "Public"
         }
     ]
 }
