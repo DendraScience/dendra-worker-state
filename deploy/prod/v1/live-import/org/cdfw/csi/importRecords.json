@@ -24,8 +24,25 @@
             "table": "Min10"
         },
         {
+            "station": "UpperButteBasin",
+            "table": "Hr"
+        },
+        {
             "station": "ShastaValley",
             "table": "Min10"
+        },
+        {
+            "station": "ShastaValley",
+            "table": "Hr"
+        },
+        {
+            "station": "NapaSonomaMarsh",
+            "table": "Min10"
+        },
+        {
+            "station": "NapaSonomaMarsh",
+            "table": "Hr"
         }
+
     ]
 }
