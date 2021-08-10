@@ -135,6 +135,10 @@
       "table": "Soil_Water"
     },
     {
+      "station": "sci_pozo_sm02",
+      "table": "Fog"
+    },
+    {
       "station": "sci_pozo_sm03_east",
       "table": "TenMin"
     },
