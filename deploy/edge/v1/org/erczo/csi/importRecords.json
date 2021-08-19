@@ -127,6 +127,10 @@
       "table": "TableRV"
     },
     {
+      "station": "rancho_venada_ws",
+      "table": "SoilMoisture"
+    },
+    {
       "station": "VMS-SM1",
       "table": "SoilMoistureLower"
     },
