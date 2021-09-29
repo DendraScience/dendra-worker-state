@@ -1,0 +1,92 @@
+{
+    "health_check_threshold": 4200,
+    "source_defaults":
+    {
+        "backfill_INACTIVE":
+        {
+            "days": 100
+        },
+        "endpoint": "/data/file/json/user/4475",
+        "pub_to_subject": "cdfw.import.v1.out.hobo",
+        "query_params":
+        {
+            "start_date_time": "2000-01-01 00:00:00"
+        }
+    },
+    "sources":
+    [
+        {
+            "context":
+            {
+                "org_slug": "cdfw",
+                "station": "back-bays-science-center",
+                "table": "10990817"
+            },
+            "description": "Back Bay Science Center - (S4)",
+            "logger": "10990817"
+        }
+    ],
+    "sources_INACTIVE":
+    [
+        {
+            "context":
+            {
+                "org_slug": "cdfw",
+                "station": "burton-mesa-er",
+                "table": "10990818"
+            },
+            "description": "Burton Mesa ER - (S5)",
+            "logger": "10990818"
+        },
+        {
+            "context":
+            {
+                "org_slug": "cdfw",
+                "station": "canada-de-san-vicente",
+                "table": "10990819"
+            },
+            "description": "Canada de San Vicente - (S3)",
+            "logger": "10990819"
+        },
+        {
+            "context":
+            {
+                "org_slug": "cdfw",
+                "station": "fillmore-hatchery",
+                "table": "20380965"
+            },
+            "description": "Fillmore Hatchery - (S7)",
+            "logger": "20380965"
+        },
+        {
+            "context":
+            {
+                "org_slug": "cdfw",
+                "station": "rancho-jamul-er",
+                "table": "10990815"
+            },
+            "description": "Rancho Jamul ER - (S1)",
+            "logger": "10990815"
+        },
+        {
+            "context":
+            {
+                "org_slug": "cdfw",
+                "station": "san-felipe-valley-wa",
+                "table": "10990816"
+            },
+            "description": "San Felipe Valley WA - (S2)",
+            "logger": "10990816"
+        },
+        {
+            "context":
+            {
+                "org_slug": "cdfw",
+                "station": "volcan-mt-wa",
+                "table": "20380966"
+            },
+            "description": "Volcan Mountain (SFVWA) - (S6)",
+            "logger": "20380966"
+        }
+    ]
+}
