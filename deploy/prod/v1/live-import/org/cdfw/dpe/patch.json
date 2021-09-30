@@ -63,6 +63,22 @@
                 "org$cdfw",
                 "source$csi"
             ]
+        },
+        {
+            "begins_at": "2000-01-01T00:00:00.000Z",
+            "definition":
+            {
+                "transform_expr":
+                [
+                    "$ ~> |$|{'time': $time().toMillis()}|"
+                ]
+            },
+            "ends_before": "2100-01-01T00:00:00.000Z",
+            "tags":
+            [
+                "org$cdfw",
+                "source$hobo"
+            ]
         }
     ]
 }
