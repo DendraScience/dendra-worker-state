@@ -2,13 +2,13 @@
     "health_check_threshold": 4200,
     "source_defaults":
     {
-        "backfill_INACTIVE":
+        "backfill":
         {
             "days": 100
         },
         "endpoint": "/data/file/json/user/4475",
         "pub_to_subject": "cdfw.import.v1.out.hobo",
-        "query_params":
+        "query_params_INACTIVE":
         {
             "start_date_time": "2000-01-01 00:00:00"
         }
@@ -24,10 +24,7 @@
             },
             "description": "Back Bay Science Center - (S4)",
             "logger": "10990817"
-        }
-    ],
-    "sources_INACTIVE":
-    [
+        },
         {
             "context":
             {
