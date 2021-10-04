@@ -1,0 +1,29 @@
+{
+    "source_defaults":
+    {
+        "queue_group": "archive",
+        "sub_options":
+        {
+            "ack_wait": 20000,
+            "durable_name": "20211004"
+        }
+    },
+    "sources":
+    [
+        {
+            "description": "CDFW: Archive records imported from HOBOlink",
+            "error_subject": "cdfw.archive.v1.err.import.hobo",
+            "preprocessing_expr":
+            [
+                "($station := context.station ~> $safeName;",
+                "$table := context.table ~> $safeName;",
+                "$time := payload.timestamp;",
+                "$docId := $join(['cdfw', 'hobo', $station, $table, $substring($time, 0, 10), $substring($time, 11, 2), $substring($time, 14, 2)], '-');",
+                "$valid := $contains($docId, /^cdfw-hobo-\\w+-\\w+-\\d{4}-\\d{2}-\\d{2}-\\d{2}-\\d{2}$/);",
+                "$params := $valid ? {'document_id': $docId} : {};",
+                "$ ~> |$|{'params': $params}|;)"
+            ],
+            "sub_to_subject": "cdfw.import.v1.out.hobo"
+        }
+    ]
+}
