@@ -74,6 +74,14 @@
         {
             "station": "FishSlough",
             "table": "Hr"
+        },
+        {
+            "station": "Hallelujah",
+            "table": "Min10"
+        },
+        {
+            "station": "Hallelujah",
+            "table": "Hr"
         }
     ]
 }
