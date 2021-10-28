@@ -2,12 +2,12 @@
     "health_check_threshold": 4200,
     "source_defaults":
     {
-        "endpoint": "/data/file/json/user/4475",
-        "pub_to_subject": "cdfw.import.v1.out.hobo",
-        "query_params":
+        "backfill":
         {
-            "start_date_time": "2020-10-01 00:00:00"
-        }
+            "days": 100
+        },
+        "endpoint": "/data/file/json/user/4475",
+        "pub_to_subject": "cdfw.import.v1.out.hobo"
     },
     "sources":
     [
