@@ -9,14 +9,19 @@
         },
         "context":
         {
-            "org_slug": "tnc"
+            "org_slug": "ucnrs"
         },
-        "pub_to_subject": "tnc.import.v1.out.csi",
+        "pub_to_subject": "ucnrs.import.v1.out.csi.cdec",
         "spec_options":
         {
             "order_option": "logged-with-holes"
         }
     },
     "sources":
-    []
+    [
+        {
+            "station": "Yosemite_Direct",
+            "table": "FifteenMin"
+        }
+    ]
 }
