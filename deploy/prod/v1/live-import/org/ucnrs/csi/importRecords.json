@@ -20,7 +20,7 @@
     "sources":
     [
         {
-            "station": "Yosemite_Direct",
+            "station": "yosemite_mariposa_grove",
             "table": "FifteenMin"
         }
     ]
