@@ -1,8 +1,42 @@
 {
-    "source_defaults":
-    {},
-    "sources":
-    [],
-    "static_rules":
-    []
+  "source_defaults": {
+    "queue_group": "prep",
+    "sub_options": {
+      "ack_wait": 60000,
+      "durable_name": "20211031"
+    }
+  },
+  "sources": [
+    {
+      "description": "UCANR: Prepare CDEC data for sending to SFTP webhook",
+      "error_subject": "ucnrs.prep.v1.err.import.csi.cdec",
+      "preprocessing_expr": [
+        "($org := context.org_slug ~> $safeName;",
+        "$station := payload.station ~> $safeName;",
+        "$stationId := context.cdec_station_id ~> $uppercase;",
+        "$table := payload.table ~> $safeName;",
+        "$tags := ['org' & '$' & $org, 'station' & '$' & $station, 'table' & '$' & $table];",
+        "$time := payload.timeString & 'Z';",
+        "$millis := $time ~> $toMillis;",
+        "$params := {'tags': $tags, 'time': $time};",
+        "$options := {'path': '/' & $stationId, 'webhook': 'cdec'};",
+        "$fields := $filter(payload.fields, function($v){$v.name = $uppercase($v.name) and $type($v.value) = 'number'});",
+        "$points := $map($fields, function($v){$join(['.A', $stationId, $fromMillis($millis, '[Y0001][M01][D01]'), 'PS', 'DH' & $fromMillis($millis, '[H01][m01]'), '/' & $v.name, $string($v.value)], ' ')});",
+        "$payload := {'options': $options, 'points': $points};",
+        "$ ~> |$|{'params': $params, 'payload': $payload}|;)"
+      ],
+      "pub_to_subject": "ucnrs.prep.v1.out.webhook",
+      "sub_to_subject": "ucnrs.import.v1.out.csi.cdec"
+    }
+  ],
+  "static_rules": [
+    {
+      "begins_at": "1500-01-01T00:00:00.000Z",
+      "definition": {
+        "transform_expr": []
+      },
+      "ends_before": "1600-01-01T00:00:00.000Z",
+      "tags": []
+    }
+  ]
 }

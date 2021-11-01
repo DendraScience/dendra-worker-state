@@ -7,10 +7,6 @@
         {
             "days": 100
         },
-        "context":
-        {
-            "org_slug": "ucnrs"
-        },
         "pub_to_subject": "ucnrs.import.v1.out.csi.cdec",
         "spec_options":
         {
@@ -20,6 +16,11 @@
     "sources":
     [
         {
+            "context":
+            {
+                "cdec_station_id": "MPG",
+                "org_slug": "ucnrs"
+            },
             "station": "yosemite_mariposa_grove",
             "table": "FifteenMin"
         }
