@@ -82,6 +82,22 @@
         {
             "station": "Hallelujah",
             "table": "Hr"
+        },
+        {
+            "station": "Imperial",
+            "table": "Min10"
+        },
+        {
+            "station": "Imperial",
+            "table": "Hr"
+        },
+        {
+            "station": "SanFelipe",
+            "table": "Min10"
+        },
+        {
+            "station": "SanFelipe",
+            "table": "Hr"
         }
     ]
 }
