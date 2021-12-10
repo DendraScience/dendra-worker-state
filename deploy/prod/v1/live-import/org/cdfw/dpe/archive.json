@@ -1,6 +1,7 @@
 {
     "source_defaults":
     {
+        "ignore_errors_at_redelivery": 15,
         "queue_group": "archive",
         "sub_options":
         {
