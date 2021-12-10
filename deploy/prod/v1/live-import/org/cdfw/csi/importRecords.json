@@ -98,6 +98,14 @@
         {
             "station": "SanFelipe",
             "table": "Hr"
+        },
+        {
+            "station": "UpperNewportBay",
+            "table": "Min10"
+        },
+        {
+            "station": "UpperNewportBay",
+            "table": "Hr"
         }
     ]
 }
