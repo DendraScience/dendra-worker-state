@@ -1,238 +1,342 @@
 {
-  "source_defaults": {
-    "queue_group": "decodePseudoBinary",
-    "sub_options": {
-      "ack_wait": 60000,
-      "durable_name": "20181226"
-    }
-  },
-  "sources": [
+    "source_defaults":
     {
-      "description": "UCNRS: Decode DCP messages imported from GOES",
-      "error_subject": "ucnrs.decodePseudoBinary.v1.err.import.goes",
-      "preprocessing_expr": [
-        "($org := context.org_slug ~> $safeName;",
-        "$station := context.station ~> $safeName;",
-        "$table := context.table ~> $safeName;",
-        "$tags := ['org' & '$' & $org, 'source$goes', 'station' & '$' & $station, 'table' & '$' & $table];",
-        "$time := payload.header.timeDate;",
-        "$params := {'tags': $tags, 'time': $time};",
-        "$ ~> |$|{'params': $params, 'payload': payload.body}|;)"
-      ],
-      "pub_to_subject": "ucnrs.decodePseudoBinary.v1.out",
-      "sub_to_subject": "ucnrs.import.v1.out.goes"
-    }
-  ],
-  "static_rules": [
-    {
-      "begins_at": "2018-04-17T00:00:00.000Z",
-      "definition": {
-        "decode_columns": [
-          "Day_of_Year",
-          "Hour",
-          "RS_kw_m2_Avg",
-          "PAR_Avg",
-          "WS_mph_WVc(1)",
-          "WS_mph_WVc(2)",
-          "WS_mph_Max",
-          "AT_C_Avg",
-          "RH_pct_Avg",
-          "BP_satHG_Avg",
-          "PCPN_in_Tot",
-          "PCPN_tot",
-          "RGTemp_C_Avg",
-          "TC_C_2_Avg",
-          "TC_C_10_Avg",
-          "delta_T_C_Avg",
-          "Soil_T2_C_Avg",
-          "Soil_T4_C_Avg",
-          "Soil_T8_C_Avg",
-          "Soil_T20_C_Avg",
-          "VWC4_Avg",
-          "VWC_V_Avg",
-          "batt_volt_Avg",
-          "PTemp_Avg",
-          "ForwardTxX10",
-          "ReflectTxX10",
-          "Sta_Id"
-        ],
-        "decode_format": "fp2_27",
-        "decode_slice": [
-          1,
-          487
-        ],
-        "time_edit": "so_h",
-        "time_interval": 600
-      },
-      "ends_before": "2018-06-27T19:21:03.000Z",
-      "tags": [
-        "org$ucnrs",
-        "source$goes",
-        "station$ucca_chickering"
-      ]
+        "queue_group": "decodePseudoBinary",
+        "sub_options":
+        {
+            "ack_wait": 60000,
+            "durable_name": "20181226"
+        }
     },
-    {
-      "begins_at": "2018-06-27T19:21:03.000Z",
-      "definition": {
-        "decode_columns": [
-          "Day_of_Year",
-          "HourMin",
-          "RS_kw_m2_Avg",
-          "RS_kw_m2_Max",
-          "RS_kw_m2_Min",
-          "RS_kw_m2_Std",
-          "PAR_Avg",
-          "PAR_Max",
-          "PAR_Min",
-          "mean_wind_vel",
-          "mean_wind_vector_mag",
-          "mean_vector_wind_dir",
-          "sd_wind_dir",
-          "WS_ms_Max",
-          "WS_ms_Min",
-          "WS_ms_Std",
-          "AT_C_Max",
-          "AT_C_Min",
-          "AT_C_Avg",
-          "RH_pct_Max",
-          "RH_pct_Min",
-          "RH_pct_Avg",
-          "BP_mB_GOES_Avg",
-          "PCPN_intrvl_Tot",
-          "PCPN_accumulated",
-          "RGTemp_C_Avg",
-          "TC_C_2_Max",
-          "TC_C_2_Min",
-          "TC_C_2_Avg",
-          "TC_C_10_Max",
-          "TC_C_10_Min",
-          "TC_C_10_Avg",
-          "delta_T_C_Max",
-          "delta_T_C_Min",
-          "delta_T_C_Avg",
-          "Soil_T50_C_Max",
-          "Soil_T50_C_Min",
-          "Soil_T50_C_Avg",
-          "Soil_T100_C_Max",
-          "Soil_T100_C_Min",
-          "Soil_T100_C_Avg",
-          "Soil_T200_C_Max",
-          "Soil_T200_C_Min",
-          "Soil_T200_C_Avg",
-          "Soil_T500_C_Max",
-          "Soil_T500_C_Min",
-          "Soil_T500_C_Avg",
-          "VWC_50_Avg",
-          "VWC_V_Avg",
-          "Soil_T50_C_CS650_Avg",
-          "Soil_TV_C_CS650_Avg",
-          "Soil_EC_50_Avg",
-          "Soil_EC_V_Avg",
-          "Soil_BDP_50_Avg",
-          "Soil_BDP_V_Avg",
-          "Soil_PA_50_Avg",
-          "Soil_PA_V_Avg",
-          "Soil_VR_50_Avg",
-          "Soil_VR_V_Avg",
-          "Batt_volt_Max",
-          "Batt_volt_Min",
-          "Batt_volt_Avg",
-          "PTemp_Avg",
-          "ForwardTxX10",
-          "ReflectTxX10",
-          "Sta_ID"
-        ],
-        "decode_format": "fp2_66",
-        "decode_slice": [
-          1,
-          1189
-        ],
-        "time_edit": "so_h",
-        "time_interval": 600
-      },
-      "ends_before": "2100-01-01T00:00:00.000Z",
-      "tags": [
-        "org$ucnrs",
-        "source$goes",
-        "station$ucca_chickering"
-      ]
-    },
-    {
-      "begins_at": "2018-04-17T00:00:00.000Z",
-      "definition": {
-        "decode_columns": [
-          "Day_of_Year",
-          "HourMin",
-          "RS_kw_m2_Avg",
-          "RS_kw_m2_Max",
-          "RS_kw_m2_Min",
-          "RS_kw_m2_Std",
-          "PAR_Avg",
-          "PAR_Max",
-          "PAR_Min",
-          "mean_wind_vel",
-          "mean_wind_vector_mag",
-          "mean_vector_wind_dir",
-          "sd_wind_dir",
-          "WS_ms_Max",
-          "WS_ms_Min",
-          "WS_ms_Std",
-          "AT_C_Max",
-          "AT_C_Min",
-          "AT_C_Avg",
-          "RH_pct_Max",
-          "RH_pct_Min",
-          "RH_pct_Avg",
-          "BP_mB_GOES_Avg",
-          "PCPN_intrvl_Tot",
-          "PCPN_accumulated",
-          "RGTemp_C_Avg",
-          "TC_C_2_Max",
-          "TC_C_2_Min",
-          "TC_C_2_Avg",
-          "TC_C_10_Max",
-          "TC_C_10_Min",
-          "TC_C_10_Avg",
-          "delta_T_C_Max",
-          "delta_T_C_Min",
-          "delta_T_C_Avg",
-          "Soil_T50_C_Max",
-          "Soil_T50_C_Min",
-          "Soil_T50_C_Avg",
-          "Soil_T100_C_Max",
-          "Soil_T100_C_Min",
-          "Soil_T100_C_Avg",
-          "Soil_T200_C_Max",
-          "Soil_T200_C_Min",
-          "Soil_T200_C_Avg",
-          "Soil_T500_C_Max",
-          "Soil_T500_C_Min",
-          "Soil_T500_C_Avg",
-          "VWC50_Avg",
-          "VWC_V_Avg",
-          "CS616_50_Avg",
-          "CS616_V_Avg",
-          "Batt_volt_Max",
-          "Batt_volt_Min",
-          "Batt_volt_Avg",
-          "PTemp_Avg",
-          "ForwardTxX10",
-          "ReflectTxX10",
-          "Sta_ID"
-        ],
-        "decode_format": "fp2_58",
-        "decode_slice": [
-          1,
-          1045
-        ],
-        "time_edit": "so_h",
-        "time_interval": 600
-      },
-      "ends_before": "2100-01-01T00:00:00.000Z",
-      "tags": [
-        "org$ucnrs",
-        "source$goes"
-      ]
-    }
-  ]
+    "sources":
+    [
+        {
+            "description": "UCNRS: Decode DCP messages imported from GOES",
+            "error_subject": "ucnrs.decodePseudoBinary.v1.err.import.goes",
+            "preprocessing_expr":
+            [
+                "($org := context.org_slug ~> $safeName;",
+                "$station := context.station ~> $safeName;",
+                "$table := context.table ~> $safeName;",
+                "$tags := ['org' & '$' & $org, 'source$goes', 'station' & '$' & $station, 'table' & '$' & $table];",
+                "$time := payload.header.timeDate;",
+                "$params := {'tags': $tags, 'time': $time};",
+                "$ ~> |$|{'params': $params, 'payload': payload.body}|;)"
+            ],
+            "pub_to_subject": "ucnrs.decodePseudoBinary.v1.out",
+            "sub_to_subject": "ucnrs.import.v1.out.goes"
+        }
+    ],
+    "static_rules":
+    [
+        {
+            "begins_at": "2018-04-17T00:00:00.000Z",
+            "definition":
+            {
+                "decode_columns":
+                [
+                    "Day_of_Year",
+                    "Hour",
+                    "RS_kw_m2_Avg",
+                    "PAR_Avg",
+                    "WS_mph_WVc(1)",
+                    "WS_mph_WVc(2)",
+                    "WS_mph_Max",
+                    "AT_C_Avg",
+                    "RH_pct_Avg",
+                    "BP_satHG_Avg",
+                    "PCPN_in_Tot",
+                    "PCPN_tot",
+                    "RGTemp_C_Avg",
+                    "TC_C_2_Avg",
+                    "TC_C_10_Avg",
+                    "delta_T_C_Avg",
+                    "Soil_T2_C_Avg",
+                    "Soil_T4_C_Avg",
+                    "Soil_T8_C_Avg",
+                    "Soil_T20_C_Avg",
+                    "VWC4_Avg",
+                    "VWC_V_Avg",
+                    "batt_volt_Avg",
+                    "PTemp_Avg",
+                    "ForwardTxX10",
+                    "ReflectTxX10",
+                    "Sta_Id"
+                ],
+                "decode_format": "fp2_27",
+                "decode_slice":
+                [
+                    1,
+                    487
+                ],
+                "time_edit": "so_h",
+                "time_interval": 600
+            },
+            "ends_before": "2018-06-27T19:21:03.000Z",
+            "tags":
+            [
+                "org$ucnrs",
+                "source$goes",
+                "station$ucca_chickering"
+            ]
+        },
+        {
+            "begins_at": "2018-06-27T19:21:03.000Z",
+            "definition":
+            {
+                "decode_columns":
+                [
+                    "Day_of_Year",
+                    "HourMin",
+                    "RS_kw_m2_Avg",
+                    "RS_kw_m2_Max",
+                    "RS_kw_m2_Min",
+                    "RS_kw_m2_Std",
+                    "PAR_Avg",
+                    "PAR_Max",
+                    "PAR_Min",
+                    "mean_wind_vel",
+                    "mean_wind_vector_mag",
+                    "mean_vector_wind_dir",
+                    "sd_wind_dir",
+                    "WS_ms_Max",
+                    "WS_ms_Min",
+                    "WS_ms_Std",
+                    "AT_C_Max",
+                    "AT_C_Min",
+                    "AT_C_Avg",
+                    "RH_pct_Max",
+                    "RH_pct_Min",
+                    "RH_pct_Avg",
+                    "BP_mB_GOES_Avg",
+                    "PCPN_intrvl_Tot",
+                    "PCPN_accumulated",
+                    "RGTemp_C_Avg",
+                    "TC_C_2_Max",
+                    "TC_C_2_Min",
+                    "TC_C_2_Avg",
+                    "TC_C_10_Max",
+                    "TC_C_10_Min",
+                    "TC_C_10_Avg",
+                    "delta_T_C_Max",
+                    "delta_T_C_Min",
+                    "delta_T_C_Avg",
+                    "Soil_T50_C_Max",
+                    "Soil_T50_C_Min",
+                    "Soil_T50_C_Avg",
+                    "Soil_T100_C_Max",
+                    "Soil_T100_C_Min",
+                    "Soil_T100_C_Avg",
+                    "Soil_T200_C_Max",
+                    "Soil_T200_C_Min",
+                    "Soil_T200_C_Avg",
+                    "Soil_T500_C_Max",
+                    "Soil_T500_C_Min",
+                    "Soil_T500_C_Avg",
+                    "VWC_50_Avg",
+                    "VWC_V_Avg",
+                    "Soil_T50_C_CS650_Avg",
+                    "Soil_TV_C_CS650_Avg",
+                    "Soil_EC_50_Avg",
+                    "Soil_EC_V_Avg",
+                    "Soil_BDP_50_Avg",
+                    "Soil_BDP_V_Avg",
+                    "Soil_PA_50_Avg",
+                    "Soil_PA_V_Avg",
+                    "Soil_VR_50_Avg",
+                    "Soil_VR_V_Avg",
+                    "Batt_volt_Max",
+                    "Batt_volt_Min",
+                    "Batt_volt_Avg",
+                    "PTemp_Avg",
+                    "ForwardTxX10",
+                    "ReflectTxX10",
+                    "Sta_ID"
+                ],
+                "decode_format": "fp2_66",
+                "decode_slice":
+                [
+                    1,
+                    1189
+                ],
+                "time_edit": "so_h",
+                "time_interval": 600
+            },
+            "ends_before": "2100-01-01T00:00:00.000Z",
+            "tags":
+            [
+                "org$ucnrs",
+                "source$goes",
+                "station$ucca_chickering"
+            ]
+        },
+        {
+            "begins_at": "2000-01-01T00:00:00.000Z",
+            "definition":
+            {
+                "decode_columns":
+                [
+                    "BattV_Avg",
+                    "WS_ms_S_WVT",
+                    "WS_ms_U_WVT",
+                    "WindDir_DU_WVT",
+                    "WindDir_SDU_WVT",
+                    "WSMax_ms_Max",
+                    "AirTC_Avg",
+                    "AirTC_Max",
+                    "AirTC_Min",
+                    "RH_Avg",
+                    "BP_mbar_Avg",
+                    "Rain_mm_Tot",
+                    "RainPeak_mmH_Max",
+                    "HAmount_Tot",
+                    "SlrW_Avg",
+                    "Profile_Min(1)",
+                    "Profile_Avg(1)",
+                    "Profile_Max(1)",
+                    "Profile_Min(2)",
+                    "Profile_Avg(2)",
+                    "Profile_Max(2)",
+                    "Profile_Min(3)",
+                    "Profile_Avg(3)",
+                    "Profile_Max(3)",
+                    "Profile_Min(4)",
+                    "Profile_Avg(4)",
+                    "Profile_Max(4)",
+                    "Profile_Min(5)",
+                    "Profile_Avg(5)",
+                    "Profile_Max(5)",
+                    "Profile_Min(6)",
+                    "Profile_Avg(6)",
+                    "Profile_Max(6)",
+                    "Profile_Min(7)",
+                    "Profile_Avg(7)",
+                    "Profile_Max(7)",
+                    "Profile_Min(8)",
+                    "Profile_Avg(8)",
+                    "Profile_Max(8)",
+                    "Profile_Min(9)",
+                    "Profile_Avg(9)",
+                    "Profile_Max(9)",
+                    "Profile_Min(10)",
+                    "Profile_Avg(10)",
+                    "Profile_Max(10)",
+                    "Profile_Min(11)",
+                    "Profile_Avg(11)",
+                    "Profile_Max(11)",
+                    "Profile_Min(12)",
+                    "Profile_Avg(12)",
+                    "Profile_Max(12)",
+                    "Profile_Min(13)",
+                    "Profile_Avg(13)",
+                    "Profile_Max(13)",
+                    "Profile_Min(14)",
+                    "Profile_Avg(14)",
+                    "Profile_Max(14)",
+                    "Profile_Min(15)",
+                    "Profile_Avg(15)",
+                    "Profile_Max(15)",
+                    "Profile_Min(16)",
+                    "Profile_Avg(16)",
+                    "Profile_Max(16)"
+                ],
+                "decode_format": "fp2_63",
+                "decode_slice":
+                [
+                    1,
+                    1135
+                ],
+                "time_edit": "so_h",
+                "time_interval": 600
+            },
+            "ends_before": "2100-01-01T00:00:00.000Z",
+            "tags":
+            [
+                "org$ucnrs",
+                "source$goes",
+                "station$granites_drippingsprings"
+            ]
+        },
+        {
+            "begins_at": "2018-04-17T00:00:00.000Z",
+            "definition":
+            {
+                "decode_columns":
+                [
+                    "Day_of_Year",
+                    "HourMin",
+                    "RS_kw_m2_Avg",
+                    "RS_kw_m2_Max",
+                    "RS_kw_m2_Min",
+                    "RS_kw_m2_Std",
+                    "PAR_Avg",
+                    "PAR_Max",
+                    "PAR_Min",
+                    "mean_wind_vel",
+                    "mean_wind_vector_mag",
+                    "mean_vector_wind_dir",
+                    "sd_wind_dir",
+                    "WS_ms_Max",
+                    "WS_ms_Min",
+                    "WS_ms_Std",
+                    "AT_C_Max",
+                    "AT_C_Min",
+                    "AT_C_Avg",
+                    "RH_pct_Max",
+                    "RH_pct_Min",
+                    "RH_pct_Avg",
+                    "BP_mB_GOES_Avg",
+                    "PCPN_intrvl_Tot",
+                    "PCPN_accumulated",
+                    "RGTemp_C_Avg",
+                    "TC_C_2_Max",
+                    "TC_C_2_Min",
+                    "TC_C_2_Avg",
+                    "TC_C_10_Max",
+                    "TC_C_10_Min",
+                    "TC_C_10_Avg",
+                    "delta_T_C_Max",
+                    "delta_T_C_Min",
+                    "delta_T_C_Avg",
+                    "Soil_T50_C_Max",
+                    "Soil_T50_C_Min",
+                    "Soil_T50_C_Avg",
+                    "Soil_T100_C_Max",
+                    "Soil_T100_C_Min",
+                    "Soil_T100_C_Avg",
+                    "Soil_T200_C_Max",
+                    "Soil_T200_C_Min",
+                    "Soil_T200_C_Avg",
+                    "Soil_T500_C_Max",
+                    "Soil_T500_C_Min",
+                    "Soil_T500_C_Avg",
+                    "VWC50_Avg",
+                    "VWC_V_Avg",
+                    "CS616_50_Avg",
+                    "CS616_V_Avg",
+                    "Batt_volt_Max",
+                    "Batt_volt_Min",
+                    "Batt_volt_Avg",
+                    "PTemp_Avg",
+                    "ForwardTxX10",
+                    "ReflectTxX10",
+                    "Sta_ID"
+                ],
+                "decode_format": "fp2_58",
+                "decode_slice":
+                [
+                    1,
+                    1045
+                ],
+                "time_edit": "so_h",
+                "time_interval": 600
+            },
+            "ends_before": "2100-01-01T00:00:00.000Z",
+            "tags":
+            [
+                "org$ucnrs",
+                "source$goes"
+            ]
+        }
+    ]
 }
