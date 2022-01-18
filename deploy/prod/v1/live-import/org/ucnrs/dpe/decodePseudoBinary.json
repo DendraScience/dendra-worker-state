@@ -171,6 +171,45 @@
             ]
         },
         {
+            "begins_at": "2000-01-01T00:00:00.000Z",
+            "definition":
+            {
+                "decode_columns":
+                [
+                    "BattV_Avg",
+                    "WS_ms_S_WVT",
+                    "WS_ms_U_WVT",
+                    "WindDir_DU_WVT",
+                    "WindDir_SDU_WVT",
+                    "WSMax_ms_Max",
+                    "AirTC_Avg",
+                    "AirTC_Max",
+                    "AirTC_Min",
+                    "RH_Avg",
+                    "BP_mbar_Avg",
+                    "Rain_mm",
+                    "RainPeak_mmH",
+                    "HAmount",
+                    "SlrW_Avg"
+                ],
+                "decode_format": "fp2_15",
+                "decode_slice":
+                [
+                    1,
+                    271
+                ],
+                "time_edit": "so_h,ad_40_m",
+                "time_interval": 600
+            },
+            "ends_before": "2100-01-01T00:00:00.000Z",
+            "tags":
+            [
+                "org$ucnrs",
+                "source$goes",
+                "station$granites_drippingsprings"
+            ]
+        },
+        {
             "begins_at": "2018-04-17T00:00:00.000Z",
             "definition":
             {
