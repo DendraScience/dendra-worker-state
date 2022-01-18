@@ -5,6 +5,17 @@
     "sources":
     [
         {
+            "address": "BEC04056",
+            "context":
+            {
+                "org_slug": "ucnrs",
+                "station": "granites_drippingsprings",
+                "table": "Ten_Min"
+            },
+            "description": "UCNRS Granites Dripping Springs",
+            "pub_to_subject": "ucnrs.import.v1.out.goes"
+        },
+        {
             "address": "C14015D4",
             "context":
             {

@@ -27,16 +27,6 @@
             "description": "Granites"
         },
         {
-            "address": "BEC04056",
-            "context":
-            {
-                "org_slug": "ucnrs",
-                "station": "granites_drippingsprings",
-                "table": "Ten_Min"
-            },
-            "description": "Granites Dripping Springs"
-        },
-        {
             "address": "BEC025B0",
             "context":
             {
