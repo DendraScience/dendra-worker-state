@@ -1,11 +1,12 @@
 {
     "source_defaults":
     {
+        "ignore_errors_at_redelivery": 15,
         "queue_group": "archive",
         "sub_options":
         {
             "ack_wait": 20000,
-            "durable_name": "20211004"
+            "durable_name": "20220125"
         }
     },
     "sources":
