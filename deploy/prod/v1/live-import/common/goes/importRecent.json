@@ -16,6 +16,17 @@
             "pub_to_subject": "ucnrs.import.v1.out.goes"
         },
         {
+            "address": "BEC036C6",
+            "context":
+            {
+                "org_slug": "ucnrs",
+                "station": "anzaborrego_sentenac",
+                "table": "TenMin"
+            },
+            "description": "UCNRS Anza Borrego Sentenac",
+            "pub_to_subject": "ucnrs.import.v1.out.goes"
+        },
+        {
             "address": "C14015D4",
             "context":
             {
