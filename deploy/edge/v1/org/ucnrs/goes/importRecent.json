@@ -47,16 +47,6 @@
             "description": "Stunt"
         },
         {
-            "address": "BEC036C6",
-            "context":
-            {
-                "org_slug": "ucnrs",
-                "station": "anzaborrego_sentenac",
-                "table": "GOES_TenMin"
-            },
-            "description": "Sentenac"
-        },
-        {
             "address": "BEC0102A",
             "context":
             {
