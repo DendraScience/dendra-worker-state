@@ -12,7 +12,7 @@
     "sources":
     [
         {
-            "description": "CHI: Archive records imported from CSI",
+            "description": "CHI: Archive records imported from CSI (with seconds)",
             "error_subject": "chi.archive.v1.err.import.csi",
             "preprocessing_expr":
             [
@@ -20,8 +20,8 @@
                 "$table := payload.table ~> $safeName;",
                 "$time := payload.timeString;",
                 "$recNum := $pad($string(payload.recordNumber), -10, '0');",
-                "$docId := $join(['chi', 'csi', $station, $table, $substring($time, 0, 10), $substring($time, 11, 2), $substring($time, 14, 2)], '-') & '_' & $recNum;",
-                "$valid := $contains($docId, /^chi-csi-\\w+-\\w+-\\d{4}-\\d{2}-\\d{2}-\\d{2}-\\d{2}_\\d{10}$/);",
+                "$docId := $join(['chi', 'csi', $station, $table, $substring($time, 0, 10), $substring($time, 11, 2), $substring($time, 14, 2)], '-') & '_' & $substring($time, 17, 2) & '_' & $recNum;",
+                "$valid := $contains($docId, /^chi-csi-\\w+-\\w+-\\d{4}-\\d{2}-\\d{2}-\\d{2}-\\d{2}_\\d{2}_\\d{10}$/);",
                 "$skip := context.replay;",
                 "$params := $valid ? {'document_id': $docId, 'skip': $skip} : {'skip': $skip};",
                 "$ ~> |$|{'params': $params}|;)"
