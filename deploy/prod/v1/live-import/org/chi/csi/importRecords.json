@@ -132,6 +132,10 @@
             "table": "SoilWater"
         },
         {
+            "station": "sci_pozo_sm01",
+            "table": "StreamDepth"
+        },
+        {
             "station": "sci_pozo_sm02",
             "table": "TenMin"
         },
@@ -166,6 +170,10 @@
         {
             "station": "sci_pozo_sm04",
             "table": "SoilWater"
+        },
+        {
+            "station": "sci_pozo_sm04",
+            "table": "StreamDepth"
         },
         {
             "station": "VESR_Meadow",
