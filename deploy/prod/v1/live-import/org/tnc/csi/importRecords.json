@@ -18,5 +18,10 @@
         }
     },
     "sources":
-    []
+    [
+       {
+            "station": "TNC_Dangermond_Jalama_HQ",
+            "table": "TenMin"
+        }
+    ]
 }
