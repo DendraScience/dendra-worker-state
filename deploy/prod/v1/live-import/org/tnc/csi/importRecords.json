@@ -20,7 +20,7 @@
     "sources":
     [
        {
-            "station": "TNC_Dangermond_Jalama_HQ",
+            "station": "Dangermond_JalamaHQ",
             "table": "TenMin"
         }
     ]
