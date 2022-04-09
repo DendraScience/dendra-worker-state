@@ -210,6 +210,94 @@
             ]
         },
         {
+            "begins_at": "2022-04-11T00:00:00.000Z",
+            "definition":
+            {
+                "decode_columns":
+                [
+                    "Day_of_Year",
+                    "HourMin",
+                    "RS_kw_m2_Avg",
+                    "RS_kw_m2_Max",
+                    "RS_kw_m2_Min",
+                    "RS_kw_m2_Std",
+                    "PAR_Avg",
+                    "PAR_Max",
+                    "PAR_Min",
+                    "mean_wind_vel",
+                    "mean_wind_vector_mag",
+                    "mean_vector_wind_dir",
+                    "sd_wind_dir",
+                    "WS_ms_Max",
+                    "WS_ms_Min",
+                    "WS_ms_Std",
+                    "AT_C_Max",
+                    "AT_C_Min",
+                    "AT_C_Avg",
+                    "RH_pct_Max",
+                    "RH_pct_Min",
+                    "RH_pct_Avg",
+                    "BP_mB_GOES_Avg",
+                    "PCPN_intrvl_Tot",
+                    "PCPN_accumulated",
+                    "RGTemp_C_Avg",
+                    "TC_C_2_Max",
+                    "TC_C_2_Min",
+                    "TC_C_2_Avg",
+                    "TC_C_10_Max",
+                    "TC_C_10_Min",
+                    "TC_C_10_Avg",
+                    "delta_T_C_Max",
+                    "delta_T_C_Min",
+                    "delta_T_C_Avg",
+                    "Soil_T50_C_Max",
+                    "Soil_T50_C_Min",
+                    "Soil_T50_C_Avg",
+                    "Soil_T100_C_Max",
+                    "Soil_T100_C_Min",
+                    "Soil_T100_C_Avg",
+                    "Soil_T200_C_Max",
+                    "Soil_T200_C_Min",
+                    "Soil_T200_C_Avg",
+                    "Soil_T500_C_Max",
+                    "Soil_T500_C_Min",
+                    "Soil_T500_C_Avg",
+                    "VWC50_Avg",
+                    "VWC_V_Avg",
+                    "CS616_50_Avg",
+                    "CS616_V_Avg",
+                    "LWmV_avg",
+                    "LWmV_max",
+                    "LWmV_min",
+                    "LWMDry_tot",
+                    "LWMCon_tot",
+                    "LWMWet_tot",
+                    "Batt_volt_Max",
+                    "Batt_volt_Min",
+                    "Batt_volt_Avg",
+                    "PTemp_Avg",
+                    "ForwardTxX10",
+                    "ReflectTxX10",
+                    "Sta_ID"
+                ],
+                "decode_format": "fp2_64",
+                "decode_slice":
+                [
+                    1,
+                    1153
+                ],
+                "time_edit": "so_h",
+                "time_interval": 600
+            },
+            "ends_before": "2100-01-01T00:00:00.000Z",
+            "tags":
+            [
+                "org$ucnrs",
+                "source$goes",
+                "station$point_reyes"
+            ]
+        },
+        {
             "begins_at": "2018-04-17T00:00:00.000Z",
             "definition":
             {

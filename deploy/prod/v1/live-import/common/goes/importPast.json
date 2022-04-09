@@ -5,6 +5,17 @@
     "sources":
     [
         {
+            "address": "BEC036C6",
+            "context":
+            {
+                "org_slug": "ucnrs",
+                "station": "point_reyes",
+                "table": "TenMin"
+            },
+            "description": "UCNRS Point Reyes",
+            "pub_to_subject": "ucnrs.import.v1.out.goes"
+        },
+        {
             "address": "BEC04056",
             "context":
             {

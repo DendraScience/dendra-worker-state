@@ -23,10 +23,6 @@
       "table": "TenMin"
     },
     {
-      "station": "point_reyes",
-      "table": "TenMin"
-    },
-    {
       "station": "Station8_wx",
       "table": "Hydra"
     },
