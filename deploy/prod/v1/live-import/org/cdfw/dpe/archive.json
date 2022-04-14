@@ -29,6 +29,22 @@
             "sub_to_subject": "cdfw.import.v1.out.csi"
         },
         {
+            "description": "CDFW: Archive DCP messages imported from GOES",
+            "error_subject": "cdfw.archive.v1.err.import.goes",
+            "preprocessing_expr":
+            [
+                "($station := context.station ~> $safeName;",
+                "$table := context.table ~> $safeName;",
+                "$time := payload.header.timeDate;",
+                "$docId := $join(['cdfw', 'goes', $station, $table, $substring($time, 0, 10), $substring($time, 11, 2)], '-');",
+                "$valid := $contains($docId, /^cdfw-goes-\\w+-\\w+-\\d{4}-\\d{2}-\\d{2}-\\d{2}$/);",
+                "$skip := context.replay;",
+                "$params := $valid ? {'document_id': $docId, 'skip': $skip} : {'skip': $skip};",
+                "$ ~> |$|{'params': $params}|;)"
+            ],
+            "sub_to_subject": "cdfw.import.v1.out.goes"
+        },
+        {
             "description": "CDFW: Archive records imported from HOBOlink",
             "error_subject": "cdfw.archive.v1.err.import.hobo",
             "preprocessing_expr":
