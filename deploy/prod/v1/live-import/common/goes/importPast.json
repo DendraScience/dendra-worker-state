@@ -5,6 +5,17 @@
     "sources":
     [
         {
+            "address": "3B0155FC",
+            "context":
+            {
+                "org_slug": "cdfw",
+                "station": "elkhorn_slough_elxc1",
+                "table": "Min15"
+            },
+            "description": "NERRS ELXC1 Elkhorn Slough",
+            "pub_to_subject": "cdfw.import.v1.out.goes"
+        },
+        {
             "address": "BEC036C6",
             "context":
             {
