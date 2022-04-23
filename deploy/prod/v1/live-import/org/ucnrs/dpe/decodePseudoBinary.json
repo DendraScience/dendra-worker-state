@@ -210,6 +210,27 @@
             ]
         },
         {
+            "begins_at": "2000-01-01T00:00:00.000Z",
+            "definition":
+            {
+                "decode_columns":
+                [],
+                "decode_format": "fp2_1",
+                "decode_slice":
+                [
+                    1,
+                    1
+                ]
+            },
+            "ends_before": "2022-04-11T00:00:00.000Z",
+            "tags":
+            [
+                "org$ucnrs",
+                "source$goes",
+                "station$point_reyes"
+            ]
+        },
+        {
             "begins_at": "2022-04-11T00:00:00.000Z",
             "definition":
             {
