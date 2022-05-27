@@ -22,6 +22,22 @@
        {
             "station": "Dangermond_JalamaHQ",
             "table": "TenMin"
+        },
+        {
+            "station": "Dangermond_Army_Camp",
+            "table": "TenMin"
+        },
+        {
+            "station": "Dangermond_Bunker_Hill",
+            "table": "TenMin"
+        },
+        {
+            "station": "Dangermond_Repeator",
+            "table": "TenMin"
+        },
+        {
+            "station": "Dangermond_Cojo_HQ",
+            "table": "TenMin"
         }
     ]
 }
