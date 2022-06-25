@@ -1,0 +1,66 @@
+{
+    "source_defaults":
+    {
+        "ignore_errors_at_redelivery": 15,
+        "queue_group": "archive",
+        "sub_options":
+        {
+            "ack_wait": 20000,
+            "durable_name": "20220614"
+        }
+    },
+    "sources":
+    [
+        {
+            "description": "TNC: Archive records imported from CSI",
+            "error_subject": "tnc.archive.v1.err.import.csi",
+            "preprocessing_expr":
+            [
+                "($station := payload.station ~> $safeName;",
+                "$table := payload.table ~> $safeName;",
+                "$time := payload.timeString;",
+                "$recNum := $pad($string(payload.recordNumber), -10, '0');",
+                "$docId := $join(['tnc', 'csi', $station, $table, $substring($time, 0, 10), $substring($time, 11, 2), $substring($time, 14, 2)], '-') & '_' & $recNum;",
+                "$valid := $contains($docId, /^tnc-csi-\\w+-\\w+-\\d{4}-\\d{2}-\\d{2}-\\d{2}-\\d{2}_\\d{10}$/);",
+                "$skip := context.replay;",
+                "$params := $valid ? {'document_id': $docId, 'skip': $skip} : {'skip': $skip};",
+                "$ ~> |$|{'params': $params}|;)"
+            ],
+            "sub_to_subject": "tnc.import.v1.out.csi"
+        },
+        {
+            "description": "TNC: Archive DCP messages imported from GOES",
+            "error_subject": "tnc.archive.v1.err.import.goes",
+            "preprocessing_expr":
+            [
+                "($station := context.station ~> $safeName;",
+                "$table := context.table ~> $safeName;",
+                "$time := payload.header.timeDate;",
+                "$docId := $join(['tnc', 'goes', $station, $table, $substring($time, 0, 10), $substring($time, 11, 2)], '-');",
+                "$valid := $contains($docId, /^tnc-goes-\\w+-\\w+-\\d{4}-\\d{2}-\\d{2}-\\d{2}$/);",
+                "$skip := context.replay;",
+                "$params := $valid ? {'document_id': $docId, 'skip': $skip} : {'skip': $skip};",
+                "$ ~> |$|{'params': $params}|;)"
+            ],
+            "sub_to_subject": "tnc.import.v1.out.goes"
+        },
+        {
+            "description": "TNC: Archive webhook data",
+            "error_subject": "tnc.archive.v1.err.import.webhook",
+            "preprocessing_expr":
+            [
+                "($app := [end_device_ids.application_ids.application_id, 'unknown'][0] ~> $safeName;",
+                "$device := [end_device_ids.device_id, 'unknown'][0] ~> $safeName;",
+                "$table := [uplink_message.decoded_payload.parsed.table, 'unknown'][0] ~> $safeName;",
+                "$time := uplink_message.received_at;",
+                "$docId := $join(['tnc', 'webhook', $device, $table, $substring($time, 0, 10), $substring($time, 11, 2), $substring($time, 14, 2)], '-');",
+                "$valid := $contains($docId, /^tnc-webhook-\\w+-\\w+-\\d{4}-\\d{2}-\\d{2}-\\d{2}-\\d{2}$/);",
+                "$context := $merge([context, {'app': $app, 'device': $device, 'table': $table}]);",
+                "$skip := $context.replay;",
+                "$params := $valid ? {'document_id': $docId, 'skip': $skip} : {'skip': $skip};",
+                "{'context': $context, 'params': $params, 'payload': $};)"
+            ],
+            "sub_to_subject": "tnc.import.v1.out.webhook"
+        }
+    ]
+}
