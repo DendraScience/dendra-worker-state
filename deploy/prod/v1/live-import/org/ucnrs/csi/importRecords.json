@@ -33,6 +33,11 @@
             "station": "yosemite_mariposa_grove",
             "table": "TenMin"
         },
+        ,
+        {
+            "station": "Dawson",
+            "table": "TenMin"
+        },
         {
             "station": "Oasis_de_los_Osos",
             "table": "TenMin"
