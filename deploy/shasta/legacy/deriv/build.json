@@ -1,0 +1,17 @@
+{
+    "source_defaults":
+    {
+        "sub_options":
+        {
+            "ack_wait": 300000,
+            "durable_name": "20220614"
+        }
+    },
+    "sources":
+    [
+        {
+            "description": "Build derived datastreams based on a method",
+            "sub_to_subject": "dendra.derivedBuild.v2.req.{hostOrdinal}"
+        }
+    ]
+}

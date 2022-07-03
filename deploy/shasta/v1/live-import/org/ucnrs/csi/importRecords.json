@@ -1,0 +1,161 @@
+{
+    "health_check_threshold": 780,
+    "ldmp_ack_delay": 400,
+    "source_defaults":
+    {
+        "backfill":
+        {
+            "hours": 336
+        },
+        "context":
+        {
+            "org_slug": "ucnrs"
+        },
+        "pub_to_subject": "ucnrs.import.v1.out.csi",
+        "spec_options":
+        {
+            "order_option": "logged-with-holes"
+        }
+    },
+    "sources":
+    [
+        {
+            "station": "bodega",
+            "table": "TenMin"
+        },
+        {
+            "station": "carpinteria",
+            "table": "TenMin"
+        },
+        {
+            "station": "Station8_wx",
+            "table": "Hydra"
+        },
+        {
+            "station": "Station8_wx",
+            "table": "Raw"
+        },
+        {
+            "station": "Station8_wx",
+            "table": "TenMin"
+        },
+        {
+            "station": "ucac_angelo",
+            "table": "TenMin"
+        },
+        {
+            "station": "ucab_anzaborrego",
+            "table": "TenMin"
+        },
+        {
+            "station": "whpt_bigcreekwhale",
+            "table": "TenMin"
+        },
+        {
+            "station": "ucbo_blueoak",
+            "table": "TenMin"
+        },
+        {
+            "station": "ucde_boyddeepcanyon",
+            "table": "TenMin"
+        },
+        {
+            "station": "ucel_elliotchaparral",
+            "table": "TenMin"
+        },
+        {
+            "station": "ucha_hastings",
+            "table": "TenMin"
+        },
+        {
+            "station": "ucja_james",
+            "table": "TenMin"
+        },
+        {
+            "station": "ucmc_mclaughlin",
+            "table": "TenMin"
+        },
+        {
+            "station": "ucmo_motterimrock",
+            "table": "TenMin"
+        },
+        {
+            "station": "ucrm_norrisranchomarino",
+            "table": "TenMin"
+        },
+        {
+            "station": "sagh_sagehen",
+            "table": "Hydra"
+        },
+        {
+            "station": "sagh_sagehen",
+            "table": "Raw"
+        },
+        {
+            "station": "sagh_sagehen",
+            "table": "TenMin"
+        },
+        {
+            "station": "ucsc_santacruzisle",
+            "table": "TenMin"
+        },
+        {
+            "station": "ucse_sedgwick",
+            "table": "TenMin"
+        },
+        {
+            "station": "ucsh_snarl",
+            "table": "TenMin"
+        },
+        {
+            "station": "ucyl_youngerlagoon",
+            "table": "TenMin"
+        },
+        {
+            "station": "fonr_FortOrd",
+            "table": "TenMin"
+        },
+        {
+            "station": "ucqr_quailridge",
+            "table": "TenMin"
+        },
+        {
+            "station": "hipk_bigcreekhighlands",
+            "table": "TenMin"
+        },
+        {
+            "station": "bcgh_bigcreekgatehouse",
+            "table": "TenMin"
+        },
+        {
+            "station": "valentine",
+            "table": "TenMin"
+        },
+        {
+            "station": "wtmbarc_barcroft",
+            "table": "TenMin"
+        },
+        {
+            "context":
+            {
+                "cdec_station_id": "MPG",
+                "org_slug": "ucnrs"
+            },
+            "pub_to_subject": "ucnrs.import.v1.out.csi.cdec",
+            "station": "yosemite_mariposa_grove",
+            "table": "FifteenMin"
+        },
+        {
+            "station": "yosemite_mariposa_grove",
+            "table": "TenMin"
+        },
+        {
+            "station": "Dawson",
+            "table": "TenMin"
+        },
+        {
+            "station": "Oasis_de_los_Osos",
+            "table": "TenMin"
+        }
+    ]
+}
