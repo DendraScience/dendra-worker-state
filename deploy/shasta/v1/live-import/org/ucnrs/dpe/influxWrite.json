@@ -5,7 +5,7 @@
         {
             "max_in_flight": 1
         },
-        "ignore_errors_at_redelivery": 10,
+        "ignore_errors_at_redelivery": 15,
         "sub_options":
         {
             "ack_wait": 60000,

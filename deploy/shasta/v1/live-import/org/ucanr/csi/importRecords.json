@@ -1,0 +1,39 @@
+{
+    "health_check_threshold": 1860,
+    "ldmp_ack_delay": 400,
+    "source_defaults":
+    {
+        "backfill":
+        {
+            "hours": 336
+        },
+        "context":
+        {
+            "org_slug": "ucanr"
+        },
+        "pub_to_subject": "ucanr.import.v1.out.csi",
+        "spec_options":
+        {
+            "order_option": "logged-with-holes"
+        }
+    },
+    "sources":
+    [
+        {
+            "station": "DL_Climate_1",
+            "table": "fifteen_min_avg"
+        },
+        {
+            "station": "DL_Climate_2",
+            "table": "fifteen_min_avg"
+        },
+        {
+            "station": "DL_Climate_3",
+            "table": "fifteen_min_avg"
+        },
+        {
+            "station": "DL_Forage",
+            "table": "Table1"
+        }
+    ]
+}

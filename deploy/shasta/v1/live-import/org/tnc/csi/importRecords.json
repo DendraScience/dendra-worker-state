@@ -1,0 +1,43 @@
+{
+    "health_check_threshold": 1860,
+    "ldmp_ack_delay": 400,
+    "source_defaults":
+    {
+        "backfill":
+        {
+            "hours": 336
+        },
+        "context":
+        {
+            "org_slug": "tnc"
+        },
+        "pub_to_subject": "tnc.import.v1.out.csi",
+        "spec_options":
+        {
+            "order_option": "logged-with-holes"
+        }
+    },
+    "sources":
+    [
+        {
+            "station": "Dangermond_JalamaHQ",
+            "table": "TenMin"
+        },
+        {
+            "station": "Dangermond_Army_Camp",
+            "table": "TenMin"
+        },
+        {
+            "station": "Dangermond_Bunker_Hill",
+            "table": "TenMin"
+        },
+        {
+            "station": "Dangermond_Repeator",
+            "table": "TenMin"
+        },
+        {
+            "station": "Dangermond_Cojo_HQ",
+            "table": "TenMin"
+        }
+    ]
+}

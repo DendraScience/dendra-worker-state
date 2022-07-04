@@ -1,0 +1,43 @@
+{
+    "health_check_threshold": 4200,
+    "source_defaults":
+    {
+        "pub_to_subject": "chi.import.v1.out.email.iridium.sbd"
+    },
+    "sources":
+    [
+        {
+            "context":
+            {
+                "device": "iridium_sbd_300234067049310",
+                "make": "stilltek",
+                "model": "igage",
+                "org_slug": "chi",
+                "table": "stilltek_igage"
+            },
+            "decode_parts":
+            [
+                {
+                    "key": "1",
+                    "type": "string"
+                },
+                {
+                    "key": "2",
+                    "type": "base64"
+                }
+            ],
+            "description": "iGage 72 (UCB Santa Cruz Island)",
+            "fetch_parts":
+            [
+                "1",
+                "2"
+            ],
+            "message_limit": 100,
+            "search":
+            {
+                "from": "sbdservice@sbd.iridium.com",
+                "subject": "SBD Msg From Unit: 300234067049310"
+            }
+        }
+    ]
+}

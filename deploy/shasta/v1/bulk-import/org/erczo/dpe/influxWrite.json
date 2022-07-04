@@ -1,4 +1,8 @@
 {
+    "metrics":
+    {
+        "expiry_seconds": 86400
+    },
     "source_defaults":
     {
         "error_sub_options":
@@ -6,6 +10,10 @@
             "max_in_flight": 1
         },
         "ignore_errors_at_redelivery": 15,
+        "metrics_groups":
+        {
+            "uploads": "context.upload_id"
+        },
         "sub_options":
         {
             "ack_wait": 60000,
