@@ -156,6 +156,10 @@
         {
             "station": "Oasis_de_los_Osos",
             "table": "TenMin"
+        },
+        {
+            "station": "Ano_Nuevo",
+            "table": "TenMin"
         }
     ]
 }
