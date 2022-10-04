@@ -61,6 +61,42 @@
                 "{'context': $context, 'params': $params, 'payload': $};)"
             ],
             "sub_to_subject": "tnc.import.v1.out.webhook"
+        },
+        {
+            "description": "TNC: Archive Swarm webhook data",
+            "error_subject": "tnc.archive.v1.err.import.webhook.swarm",
+            "preprocessing_expr":
+            [
+                "($app := [$string(userApplicationId), 'unknown'][0] ~> $safeName;",
+                "$device := [$string(deviceId), 'unknown'][0] ~> $safeName;",
+                "$time := hiveRxTime;",
+                "$packetId := $pad($string(packetId), -10, '0');",
+                "$docId := $join(['tnc', 'webhook', 'swarm', $device, $substring($time, 0, 10), $substring($time, 11, 2), $substring($time, 14, 2)], '-') & '_' & $packetId;",
+                "$valid := $contains($docId, /^tnc-webhook-swarm-\\w+-\\d{4}-\\d{2}-\\d{2}-\\d{2}-\\d{2}_\\d{10}$/);",
+                "$context := $merge([context, {'app': $app, 'device': $device}]);",
+                "$skip := $context.replay;",
+                "$params := $valid ? {'document_id': $docId, 'skip': $skip} : {'skip': $skip};",
+                "{'context': $context, 'params': $params, 'payload': $};)"
+            ],
+            "sub_to_subject": "tnc.import.v1.out.webhook.swarm"
+        },
+        {
+            "description": "TNC: Archive Things webhook data",
+            "error_subject": "tnc.archive.v1.err.import.webhook.things",
+            "preprocessing_expr":
+            [
+                "($app := [end_device_ids.application_ids.application_id, 'unknown'][0] ~> $safeName;",
+                "$device := [end_device_ids.device_id, 'unknown'][0] ~> $safeName;",
+                "$table := [uplink_message.decoded_payload.parsed.table, 'unknown'][0] ~> $safeName;",
+                "$time := uplink_message.received_at;",
+                "$docId := $join(['tnc', 'webhook', 'things', $device, $table, $substring($time, 0, 10), $substring($time, 11, 2), $substring($time, 14, 2)], '-');",
+                "$valid := $contains($docId, /^tnc-webhook-things-\\w+-\\w+-\\d{4}-\\d{2}-\\d{2}-\\d{2}-\\d{2}$/);",
+                "$context := $merge([context, {'app': $app, 'device': $device, 'table': $table}]);",
+                "$skip := $context.replay;",
+                "$params := $valid ? {'document_id': $docId, 'skip': $skip} : {'skip': $skip};",
+                "{'context': $context, 'params': $params, 'payload': $};)"
+            ],
+            "sub_to_subject": "tnc.import.v1.out.webhook.things"
         }
     ]
 }
