@@ -73,7 +73,7 @@
                 "};",
                 "$channels := $parts[[4,6,8,10,12,14,16,18,20]];",
                 "$lines := $parts[[5,7,9,11,13,15,17,19,21]];",
-                "$fields := $channels ~> $reduce(function($f, $ch, $i) {(",
+                "$fields := ($channels ? $channels : []) ~> $reduce(function($f, $ch, $i) {(",
                 "$merge([",
                 "$f,",
                 "$lines[$i] ~> $sdi12Parse ~> $reduce(function($cf, $v, $j) {(",
