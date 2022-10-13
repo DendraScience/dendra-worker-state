@@ -59,13 +59,14 @@
             "error_subject": "tnc.prep.v1.err.webhook.swarm",
             "preprocessing_expr":
             [
-                "($app := [$string(userApplicationId), 'unknown'][0] ~> $safeName;",
-                "$device := [$string(deviceId), 'unknown'][0] ~> $safeName;",
-                "$parts := data ~> $base64decode ~> $split(',');",
+                "($root := payload ? payload : $;",
+                "$app := [$string($root.userApplicationId), 'unknown'][0] ~> $safeName;",
+                "$device := [$string($root.deviceId), 'unknown'][0] ~> $safeName;",
+                "$parts := $root.data ~> $base64decode ~> $split(',');",
                 "$messageType := $parts[3];",
                 "$table := 'msg_type_' & [$messageType, 'unknown'][0] ~> $safeName;",
                 "$tags := ['app' & '$' & $app, 'device' & '$' & $device, 'table' & '$' & $table];",
-                "$received_at := hiveRxTime & 'Z' ~> $toMillis;",
+                "$received_at := $root.hiveRxTime & 'Z' ~> $toMillis;",
                 "$time := $number($parts[1]) * 1000;",
                 "$options := {'database': 'swarm_device_' & $device, 'precision': 'ms'};",
                 "$sdi12Parse := function($line) {",
