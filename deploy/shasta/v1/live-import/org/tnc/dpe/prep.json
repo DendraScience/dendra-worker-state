@@ -61,7 +61,7 @@
             [
                 "($app := [$string(userApplicationId), 'unknown'][0] ~> $safeName;",
                 "$device := [$string(deviceId), 'unknown'][0] ~> $safeName;",
-                "$parts := decoded.$split(',');",
+                "$parts := data ~> $base64decode ~> $split(',');",
                 "$messageType := $parts[3];",
                 "$table := 'msg_type_' & [$messageType, 'unknown'][0] ~> $safeName;",
                 "$tags := ['app' & '$' & $app, 'device' & '$' & $device, 'table' & '$' & $table];",
