@@ -114,6 +114,30 @@
         {
             "station": "BurkeRobeyFen",
             "table": "Hr"
+        },
+        {
+            "station": "CampCady",
+            "table": "Min10"
+        },
+        {
+            "station": "CampCady",
+            "table": "Hr"
+        },
+        {
+            "station": "SycuanPeak",
+            "table": "Min10"
+        },
+        {
+            "station": "SycuanPeak",
+            "table": "Hr"
+        },
+        {
+            "station": "SanElijoLagoon",
+            "table": "Min10"
+        },
+        {
+            "station": "SanElijoLagoon",
+            "table": "Hr"
         }
     ]
 }
