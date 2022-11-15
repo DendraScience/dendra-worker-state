@@ -310,7 +310,7 @@
                 "time_edit": "so_h",
                 "time_interval": 600
             },
-            "ends_before": "2022-14-11T23:00:00.000Z",
+            "ends_before": "2022-11-14T23:00:00.000Z",
             "tags":
             [
                 "org$ucnrs",
@@ -319,7 +319,7 @@
             ]
         },
         {
-            "begins_at": "2022-14-11T23:00:00.000Z",
+            "begins_at": "2022-11-14T23:00:00.000Z",
             "definition":
             {
                 "decode_columns":
