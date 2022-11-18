@@ -87,11 +87,10 @@
             [
                 "($app := [end_device_ids.application_ids.application_id, 'unknown'][0] ~> $safeName;",
                 "$device := [end_device_ids.device_id, 'unknown'][0] ~> $safeName;",
-                "$table := [uplink_message.decoded_payload.parsed.table, 'unknown'][0] ~> $safeName;",
                 "$time := uplink_message.received_at;",
-                "$docId := $join(['tnc', 'webhook', 'things', $device, $table, $substring($time, 0, 10), $substring($time, 11, 2), $substring($time, 14, 2)], '-');",
+                "$docId := $join(['tnc', 'webhook', 'things', $app, $device, $substring($time, 0, 10), $substring($time, 11, 2), $substring($time, 14, 2)], '-');",
                 "$valid := $contains($docId, /^tnc-webhook-things-\\w+-\\w+-\\d{4}-\\d{2}-\\d{2}-\\d{2}-\\d{2}$/);",
-                "$context := $merge([context, {'app': $app, 'device': $device, 'table': $table}]);",
+                "$context := $merge([context, {'app': $app, 'device': $device}]);",
                 "$skip := $context.replay;",
                 "$params := $valid ? {'document_id': $docId, 'skip': $skip} : {'skip': $skip};",
                 "{'context': $context, 'params': $params, 'payload': $};)"
