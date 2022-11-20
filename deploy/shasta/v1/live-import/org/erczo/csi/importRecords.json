@@ -133,6 +133,14 @@
         },
         {
             "station": "rancho_venada_ws",
+            "table": "Stem_Temp_Data"
+        },
+        {
+            "station": "rancho_venada_ws",
+            "table": "Stem_Water_Data"
+        },
+        {
+            "station": "rancho_venada_ws",
             "table": "SoilMoisture"
         },
         {
