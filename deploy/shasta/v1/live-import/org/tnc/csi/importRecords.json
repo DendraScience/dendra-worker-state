@@ -39,12 +39,16 @@
             "station": "Dangermond_Cojo_HQ",
             "table": "TenMin"
         },
-                {
+        {
             "station": "Dangermond_Ramajal",
             "table": "TenMin"
         },
-                {
+        {
             "station": "Dangermond_Cistern",
+            "table": "TenMin"
+        },
+        {
+            "station": "Dangermond_Jalachichi",
             "table": "TenMin"
         }
     ]
