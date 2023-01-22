@@ -5,7 +5,7 @@
     {
         "backfill":
         {
-            "hours": 72
+            "days": 30
         },
         "context":
         {
