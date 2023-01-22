@@ -36,10 +36,10 @@
             {
                 "org_slug": "cdfw",
                 "station": "canada-de-san-vicente",
-                "table": "10990819"
+                "table": "21474772"
             },
             "description": "Canada de San Vicente - (S3)",
-            "logger": "10990819"
+            "logger": "21474772"
         },
         {
             "context":
@@ -66,10 +66,10 @@
             {
                 "org_slug": "cdfw",
                 "station": "san-felipe-valley-wa",
-                "table": "10990816"
+                "table": "21474770"
             },
             "description": "San Felipe Valley WA - (S2)",
-            "logger": "10990816"
+            "logger": "21474770"
         },
         {
             "context":
