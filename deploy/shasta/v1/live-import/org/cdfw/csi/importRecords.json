@@ -138,6 +138,14 @@
         {
             "station": "SanElijoLagoon",
             "table": "Hr"
+        },
+        {
+            "station": "NorthGrasslands",
+            "table": "Min10"
+        },
+        {
+            "station": "NorthGrasslands",
+            "table": "Hr"
         }
     ]
 }
