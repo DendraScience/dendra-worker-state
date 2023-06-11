@@ -50,6 +50,10 @@
         {
             "station": "Dangermond_Jalachichi",
             "table": "TenMin"
+        },
+        {
+            "station": "Dangermond_Little_Cojo",
+            "table": "TenMin"
         }
     ]
 }
