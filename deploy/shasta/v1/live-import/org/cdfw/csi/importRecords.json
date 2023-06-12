@@ -146,6 +146,14 @@
         {
             "station": "NorthGrasslands",
             "table": "Hr"
+        },
+                {
+            "station": "Cosumnes",
+            "table": "Min10"
+        },
+        {
+            "station": "Cosumnes",
+            "table": "Hr"
         }
     ]
 }
