@@ -56,10 +56,10 @@
             {
                 "org_slug": "cdfw",
                 "station": "rancho-jamul-er",
-                "table": "10990815"
+                "table": "21474775"
             },
             "description": "Rancho Jamul ER - (S1)",
-            "logger": "10990815"
+            "logger": "21474775"
         },
         {
             "context":

@@ -21,6 +21,16 @@
             },
             "description": "San Felipe Valley WA - (S2)",
             "logger": "21474770"
+        },
+        {
+            "context":
+            {
+                "org_slug": "cdfw",
+                "station": "rancho-jamul-er",
+                "table": "21474775"
+            },
+            "description": "Rancho Jamul ER - (S1)",
+            "logger": "21474775"
         }
     ]
 }
