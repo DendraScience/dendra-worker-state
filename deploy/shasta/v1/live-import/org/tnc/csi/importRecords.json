@@ -54,6 +54,10 @@
         {
             "station": "Dangermond_Little_Cojo",
             "table": "TenMin"
+        },
+        {
+            "station": "Dangermond_North_Beach",
+            "table": "TenMin"
         }
     ]
 }
