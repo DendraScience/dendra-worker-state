@@ -2,14 +2,14 @@
     "health_check_threshold": 4200,
     "source_defaults":
     {
-        "end_date_time": "2023-06-13 17:20:00",
+        "end_date_time": "2022-12-10 10:00:00",
         "endpoint": "/data/file/json/user/4475",
         "increment":
         {
             "days": 34
         },
         "pub_to_subject": "cdfw.import.v1.out.hobo",
-        "start_date_time": "2023-05-27 08:35:00"
+        "start_date_time": "2022-07-01 10:00:00"
     },
     "sources":
     [
@@ -17,11 +17,11 @@
             "context":
             {
                 "org_slug": "cdfw",
-                "station": "rancho-jamul-er",
-                "table": "10990815"
+                "station": "san-felipe-valley-wa",
+                "table": "10990816"
             },
-            "description": "Rancho Jamul ER - (S1)",
-            "logger": "10990815"
+            "description": "San Felipe Valley WA - (S2)",
+            "logger": "10990816"
         }
     ]
 }
