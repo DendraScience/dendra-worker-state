@@ -58,6 +58,10 @@
         {
             "station": "Dangermond_North_Beach",
             "table": "TenMin"
+        },
+        {
+            "station": "Dangermond_Quarry",
+            "table": "TenMin"
         }
     ]
 }
