@@ -162,6 +162,30 @@
         {
             "station": "LakeEarl",
             "table": "Hr"
+        },
+        {
+            "station": "PickelMeadow",
+            "table": "Min10"
+        },
+        {
+            "station": "PickelMeadow",
+            "table": "Hr"
+        },
+        {
+            "station": "AshCreek",
+            "table": "Min10"
+        },
+        {
+            "station": "AshCreek",
+            "table": "Hr"
+        },
+        {
+            "station": "FiveSprings",
+            "table": "Min10"
+        },
+        {
+            "station": "FiveSprings",
+            "table": "Hr"
         }
     ]
 }
