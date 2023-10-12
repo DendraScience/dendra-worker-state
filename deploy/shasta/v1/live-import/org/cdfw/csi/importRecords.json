@@ -186,6 +186,22 @@
         {
             "station": "FiveSprings",
             "table": "Hr"
+        },
+        {
+            "station": "FitzhughCreek",
+            "table": "Min10"
+        },
+        {
+            "station": "FitzhughCreek",
+            "table": "Hr"
+        },
+        {
+            "station": "HoneyLake",
+            "table": "Min10"
+        },
+        {
+            "station": "HoneyLake",
+            "table": "Hr"
         }
     ]
 }
