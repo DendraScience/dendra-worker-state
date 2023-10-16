@@ -202,6 +202,22 @@
         {
             "station": "HoneyLake",
             "table": "Hr"
+        },
+        {
+            "station": "Tehama",
+            "table": "Min10"
+        },
+        {
+            "station": "Tehama",
+            "table": "Hr"
+        },
+        {
+            "station": "Spenceville",
+            "table": "Min10"
+        },
+        {
+            "station": "Spenceville",
+            "table": "Hr"
         }
     ]
 }
