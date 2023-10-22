@@ -218,6 +218,14 @@
         {
             "station": "Spenceville",
             "table": "Hr"
+        },
+        {
+            "station": "IndianJoeSprings",
+            "table": "Min10"
+        },
+        {
+            "station": "IndianJoeSprings",
+            "table": "Hr"
         }
     ]
 }
