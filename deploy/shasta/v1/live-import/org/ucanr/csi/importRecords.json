@@ -34,6 +34,18 @@
         {
             "station": "DL_Forage",
             "table": "Table1"
+        },
+        {
+            "station": "HREC_Orchard",
+            "table": "FifteenMin"
+        },
+        {
+            "station": "HREC_Orchard",
+            "table": "PowerInfo"
+        },
+        {
+            "station": "HREC_Orchard",
+            "table": "Hourly"
         }
     ]
 }
