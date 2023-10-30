@@ -108,6 +108,10 @@
             "table": "TenMin"
         },
         {
+            "station": "ucsh_snarl",
+            "table": "Distrometer"
+        },
+        {
             "station": "ucyl_youngerlagoon",
             "table": "TenMin"
         },
