@@ -46,6 +46,18 @@
         {
             "station": "HREC_Orchard",
             "table": "Hourly"
+        },
+        {
+            "station": "HREC_James",
+            "table": "FifteenMin"
+        },
+        {
+            "station": "HREC_James",
+            "table": "PowerInfo"
+        },
+        {
+            "station": "HREC_James",
+            "table": "Hourly"
         }
     ]
 }
