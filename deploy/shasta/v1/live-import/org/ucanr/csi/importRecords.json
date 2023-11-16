@@ -58,6 +58,18 @@
         {
             "station": "HREC_James",
             "table": "Hourly"
+        },
+        {
+            "station": "HREC_Middle",
+            "table": "FifteenMin"
+        },
+        {
+            "station": "HREC_Middle",
+            "table": "PowerInfo"
+        },
+        {
+            "station": "HREC_Middle",
+            "table": "Hourly"
         }
     ]
 }
