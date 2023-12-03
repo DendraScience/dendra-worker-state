@@ -97,7 +97,7 @@
             "context":
             {
                 "org_slug": "ucnrs",
-                "station": "station_ucde_boyddeepcanyon",
+                "station": "ucde_boyddeepcanyon",
                 "table": "TenMin"
             },
             "description": "UCNRS Boyd Deep Canyon",
