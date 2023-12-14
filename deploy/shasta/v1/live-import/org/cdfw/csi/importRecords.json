@@ -226,6 +226,22 @@
         {
             "station": "IndianJoeSprings",
             "table": "Hr"
+        },
+        {
+            "station": "BigSandy",
+            "table": "Min10"
+        },
+        {
+            "station": "BigSandy",
+            "table": "Hr"
+        },
+        {
+            "station": "Canada_de_LosOsos",
+            "table": "Min10"
+        },
+        {
+            "station": "Canada_de_LosOsos",
+            "table": "Hr"
         }
     ]
 }
