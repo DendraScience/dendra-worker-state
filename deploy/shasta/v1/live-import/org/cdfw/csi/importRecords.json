@@ -242,6 +242,14 @@
         {
             "station": "Canada_de_LosOsos",
             "table": "Hr"
+        },
+        {
+            "station": "Semitropic",
+            "table": "Min10"
+        },
+        {
+            "station": "Semitropic",
+            "table": "Hr"
         }
     ]
 }
