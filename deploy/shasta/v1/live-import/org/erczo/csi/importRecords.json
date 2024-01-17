@@ -120,30 +120,6 @@
             "table": "WeatherStationSS"
         },
         {
-            "station": "rancho_venada_ws",
-            "table": "SapFlowDataTable"
-        },
-        {
-            "station": "rancho_venada_ws",
-            "table": "SapTemperatureTable"
-        },
-        {
-            "station": "rancho_venada_ws",
-            "table": "TableRV"
-        },
-        {
-            "station": "rancho_venada_ws",
-            "table": "Stem_Temp_Data"
-        },
-        {
-            "station": "rancho_venada_ws",
-            "table": "Stem_Water_Data"
-        },
-        {
-            "station": "rancho_venada_ws",
-            "table": "SoilMoisture"
-        },
-        {
             "station": "VMS-SM1",
             "table": "SoilMoistureLower"
         },
