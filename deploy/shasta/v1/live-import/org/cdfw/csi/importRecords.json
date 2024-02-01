@@ -180,6 +180,10 @@
             "table": "Hr"
         },
         {
+            "station": "AshCreek",
+            "table": "EToData"
+        },
+        {
             "station": "FiveSprings",
             "table": "Min10"
         },
