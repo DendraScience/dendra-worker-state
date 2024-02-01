@@ -25,11 +25,11 @@
         },
         {
             "station": "rancho_venada_ws",
-            "table": "SapFlowDataTable"
+            "table": "Sap_Flow_Data"
         },
         {
             "station": "rancho_venada_ws",
-            "table": "SapTemperatureTable"
+            "table": "GropointTable"
         },
         {
             "station": "rancho_venada_ws",
@@ -45,7 +45,7 @@
         },
         {
             "station": "rancho_venada_ws",
-            "table": "SoilMoisture"
+            "table": "Diagnostic_Data"
         }
     ]
 }
