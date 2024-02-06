@@ -66,6 +66,14 @@
         {
             "station": "Dangermond_Cojo_Gate",
             "table": "TenMin"
+        },
+        {
+            "station": "Dangermond_UCSB_N_Beach",
+            "table": "Hourly"
+        },
+        {
+            "station": "Dangermond_UCSB_N_Beach",
+            "table": "OneMinute"
         }
     ]
 }
