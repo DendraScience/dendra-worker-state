@@ -200,12 +200,20 @@
             "table": "Hr"
         },
         {
+            "station": "FitzhughCreek",
+            "table": "EToData"
+        },
+        {
             "station": "HoneyLake",
             "table": "Min10"
         },
         {
             "station": "HoneyLake",
             "table": "Hr"
+        },
+        {
+            "station": "HoneyLake",
+            "table": "EToData"
         },
         {
             "station": "Tehama",
@@ -216,12 +224,20 @@
             "table": "Hr"
         },
         {
+            "station": "Tehama",
+            "table": "EToData"
+        },
+        {
             "station": "Spencerville",
             "table": "Min10"
         },
         {
             "station": "Spencerville",
             "table": "Hr"
+        },
+        {
+            "station": "Spencerville",
+            "table": "EToData"
         },
         {
             "station": "IndianJoeSprings",
@@ -240,6 +256,10 @@
             "table": "Hr"
         },
         {
+            "station": "BigSandy",
+            "table": "EToData"
+        },
+        {
             "station": "Canada_de_LosOsos",
             "table": "Min10"
         },
@@ -248,12 +268,20 @@
             "table": "Hr"
         },
         {
+            "station": "Canada_de_LosOsos",
+            "table": "EToData"
+        },
+        {
             "station": "Semitropic",
             "table": "Min10"
         },
         {
             "station": "Semitropic",
             "table": "Hr"
+        },
+        {
+            "station": "Semitropic",
+            "table": "EToData"
         }
     ]
 }
