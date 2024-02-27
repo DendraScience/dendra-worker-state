@@ -45,6 +45,10 @@
         },
         {
             "station": "rancho_venada_ws",
+            "table": "SoilMoisture"
+        },
+        {
+            "station": "rancho_venada_ws",
             "table": "Diagnostic_Data"
         }
     ]
