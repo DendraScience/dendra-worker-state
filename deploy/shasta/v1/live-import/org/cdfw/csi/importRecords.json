@@ -282,6 +282,18 @@
         {
             "station": "Semitropic",
             "table": "EToData"
+        },
+        {
+            "station": "PaloVerde",
+            "table": "Min10"
+        },
+        {
+            "station": "PaloVerde",
+            "table": "Hr"
+        },
+        {
+            "station": "PaloVerde",
+            "table": "EToData"
         }
     ]
 }
