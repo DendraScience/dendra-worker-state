@@ -28,12 +28,20 @@
             "table": "Hr"
         },
         {
+            "station": "UpperButteBasin",
+            "table": "EToData"
+        },
+        {
             "station": "ShastaValley",
             "table": "Min10"
         },
         {
             "station": "ShastaValley",
             "table": "Hr"
+        },
+        {
+            "station": "ShastaValley",
+            "table": "EToData"
         },
         {
             "station": "NapaSonomaMarsh",
@@ -44,12 +52,20 @@
             "table": "Hr"
         },
         {
+            "station": "NapaSonomaMarsh",
+            "table": "EToData"
+        },
+        {
             "station": "Watsonville",
             "table": "Min10"
         },
         {
             "station": "Watsonville",
             "table": "Hr"
+        },
+        {
+            "station": "Watsonville",
+            "table": "EToData"
         },
         {
             "station": "Canebrake",
@@ -60,12 +76,20 @@
             "table": "Hr"
         },
         {
+            "station": "Canebrake",
+            "table": "EToData"
+        },
+        {
             "station": "Carrizo",
             "table": "Min10"
         },
         {
             "station": "Carrizo",
             "table": "Hr"
+        },
+        {
+            "station": "Carrizo",
+            "table": "EToData"
         },
         {
             "station": "FishSlough",
@@ -76,12 +100,20 @@
             "table": "Hr"
         },
         {
+            "station": "FishSlough",
+            "table": "EToData"
+        },
+        {
             "station": "Hallelujah",
             "table": "Min10"
         },
         {
             "station": "Hallelujah",
             "table": "Hr"
+        },
+        {
+            "station": "Hallelujah",
+            "table": "EToData"
         },
         {
             "station": "Imperial",
@@ -92,12 +124,20 @@
             "table": "Hr"
         },
         {
+            "station": "Imperial",
+            "table": "EToData"
+        },
+        {
             "station": "SanFelipeCreek",
             "table": "Min10"
         },
         {
             "station": "SanFelipeCreek",
             "table": "Hr"
+        },
+        {
+            "station": "SanFelipeCreek",
+            "table": "EToData"
         },
         {
             "station": "UpperNewportBay",
@@ -108,12 +148,20 @@
             "table": "Hr"
         },
         {
+            "station": "UpperNewportBay",
+            "table": "EToData"
+        },
+        {
             "station": "BurkeRobeyFen",
             "table": "Min10"
         },
         {
             "station": "BurkeRobeyFen",
             "table": "Hr"
+        },
+        {
+            "station": "BurkeRobeyFen",
+            "table": "EToData"
         },
         {
             "station": "CampCady",
@@ -124,12 +172,20 @@
             "table": "Hr"
         },
         {
+            "station": "CampCady",
+            "table": "EToData"
+        },
+        {
             "station": "SycuanPeak",
             "table": "Min10"
         },
         {
             "station": "SycuanPeak",
             "table": "Hr"
+        },
+        {
+            "station": "SycuanPeak",
+            "table": "EToData"
         },
         {
             "station": "SanElijoLagoon",
@@ -140,12 +196,20 @@
             "table": "Hr"
         },
         {
+            "station": "SanElijoLagoon",
+            "table": "EToData"
+        },
+        {
             "station": "NorthGrasslands",
             "table": "Min10"
         },
         {
             "station": "NorthGrasslands",
             "table": "Hr"
+        },
+        {
+            "station": "NorthGrasslands",
+            "table": "EToData"
         },
         {
             "station": "Cosumnes",
@@ -156,6 +220,10 @@
             "table": "Hr"
         },
         {
+            "station": "Cosumnes",
+            "table": "EToData"
+        },
+        {
             "station": "LakeEarl",
             "table": "Min10"
         },
@@ -164,12 +232,20 @@
             "table": "Hr"
         },
         {
+            "station": "LakeEarl",
+            "table": "EToData"
+        },
+        {
             "station": "PickelMeadow",
             "table": "Min10"
         },
         {
             "station": "PickelMeadow",
             "table": "Hr"
+        },
+        {
+            "station": "PickelMeadow",
+            "table": "EToData"
         },
         {
             "station": "AshCreek",
@@ -190,6 +266,10 @@
         {
             "station": "FiveSprings",
             "table": "Hr"
+        },
+        {
+            "station": "FiveSprings",
+            "table": "EToData"
         },
         {
             "station": "FitzhughCreek",
@@ -246,6 +326,10 @@
         {
             "station": "IndianJoeSprings",
             "table": "Hr"
+        },
+        {
+            "station": "IndianJoeSprings",
+            "table": "EToData"
         },
         {
             "station": "BigSandy",
