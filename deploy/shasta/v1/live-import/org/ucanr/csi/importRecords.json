@@ -70,6 +70,30 @@
         {
             "station": "HREC_Middle",
             "table": "Hourly"
+        },
+        {
+            "station": "HREC_Niderost",
+            "table": "FifteenMin"
+        },
+        {
+            "station": "HREC_Niderost",
+            "table": "PowerInfo"
+        },
+        {
+            "station": "HREC_Niderost",
+            "table": "Hourly"
+        },
+        {
+            "station": "HREC_Foster",
+            "table": "FifteenMin"
+        },
+        {
+            "station": "HREC_Foster",
+            "table": "PowerInfo"
+        },
+        {
+            "station": "HREC_Foster",
+            "table": "Hourly"
         }
     ]
 }
