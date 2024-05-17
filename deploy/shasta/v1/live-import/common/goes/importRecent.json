@@ -93,17 +93,6 @@
             "pub_to_subject": "ucnrs.import.v1.out.goes"
         },
         {
-            "address": "BEC00D8E",
-            "context":
-            {
-                "org_slug": "ucnrs",
-                "station": "ucde_boyddeepcanyon",
-                "table": "TenMin"
-            },
-            "description": "UCNRS Boyd Deep Canyon",
-            "pub_to_subject": "ucnrs.import.v1.out.goes"
-        },
-        {
             "address": "C14015D4",
             "context":
             {
