@@ -378,6 +378,18 @@
         {
             "station": "PaloVerde",
             "table": "EToData"
+        },
+        {
+            "station": "BigTableMountain",
+            "table": "Min10"
+        },
+        {
+            "station": "BigTableMountain",
+            "table": "Hr"
+        },
+        {
+            "station": "BigTableMountain",
+            "table": "EToData"
         }
     ]
 }
