@@ -126,6 +126,10 @@
         {
             "station": "VMS-SM2",
             "table": "SoilMoisturePit3"
+        },
+        {
+            "station": "EdellMeadowWS",
+            "table": "TenMin"
         }
     ]
 }
