@@ -390,6 +390,18 @@
         {
             "station": "BigTableMountain",
             "table": "EToData"
+        },
+        {
+            "station": "HopeValley",
+            "table": "Min10"
+        },
+        {
+            "station": "HopeValley",
+            "table": "Hr"
+        },
+        {
+            "station": "HopeValley",
+            "table": "EToData"
         }
     ]
 }
