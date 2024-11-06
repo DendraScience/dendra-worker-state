@@ -97,6 +97,31 @@
             "sub_to_subject": "erczo.import.v1.out.file"
         },
         {
+            "description": "Fog RNS: Prepare file import payload for writing to Influx",
+            "error_subject": "fogrns.prep.v1.err.import.file",
+            "ignore_errors": true,
+            "preprocessing_expr":
+            [
+                "($org := context.org_slug ~> $safeName;",
+                "$station := context.station ~> $safeName;",
+                "$table := context.table ~> $safeName;",
+                "$tags := [$org ? 'org' & '$' & $org : undefined, $station ? 'station' & '$' & $station : undefined, $table ? 'table' & '$' & $table : undefined];",
+                "$ms := $toMillis('1970-01-01 ' & payload.Time, '[Y0001]-[M01]-[D01] [h#1]:[m01]:[s01] [P]');",
+                "$time := payload.time + $ms;",
+                "$params := {'tags': $tags, 'time': $time};",
+                "$source := context.source ~> $split('/');",
+                "$database := $source[2] ? $source[2] ~> $safeName : $station ? 'station_' & $station : 'database_unknown';",
+                "$meas := $source[3] ? $source[3] ~> $safeName : $table ? 'source_' & $table : 'unknown';",
+                "$options := {'database': $database, 'precision': 'ms'};",
+                "$fields := payload ~> $deleteNulls ~> $deleteKeys(['time', 'Time']);",
+                "$points := [{'fields': $fields, 'measurement': $meas, 'time': $time}];",
+                "$payload := {'options': $options, 'points': $points};",
+                "$ ~> |$|{'params': $params, 'payload': $payload}|;)"
+            ],
+            "pub_to_subject": "fogrns.prep.v1.out",
+            "sub_to_subject": "fogrns.import.v1.out.file"
+        },
+        {
             "description": "Pepperwood: Prepare file import payload for writing to Influx",
             "error_subject": "pepperwood.prep.v1.err.import.file",
             "ignore_errors": true,
