@@ -130,6 +130,30 @@
         {
             "station": "EdellMeadowWS",
             "table": "TenMin"
+        },
+        {
+            "station": "SFU_MalcomKnapp",
+            "table": "MKRF_60mins"
+        },
+        {
+            "station": "SFU_MalcomKnapp",
+            "table": "Stem_Temp_Data"
+        },
+        {
+            "station": "SFU_MalcomKnapp",
+            "table": "Stem_Water_Data"
+        },
+        {
+            "station": "SFU_GalianoIsle",
+            "table": "GALI_60mins"
+        },
+        {
+            "station": "SFU_GalianoIsle",
+            "table": "Stem_Temp_Data"
+        },
+        {
+            "station": "SFU_GalianoIsle",
+            "table": "Stem_Water_Data"
         }
     ]
 }
