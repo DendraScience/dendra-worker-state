@@ -190,6 +190,34 @@
         {
             "station": "VESR_SagebrushHill",
             "table": "VWC"
+        },
+        {
+            "station": "SCIR_DiabloPeak",
+            "table": "TenMin"
+        },
+        {
+            "station": "SCIR_SM05",
+            "table": "TenMin"
+        },
+        {
+            "station": "SCIR_SM05",
+            "table": "SoilWater"
+        },
+        {
+            "station": "SCIR_ChristyBluff",
+            "table": "TenMin"
+        },
+        {
+            "station": "SCIR_Forney",
+            "table": "TenMin"
+        },
+        {
+            "station": "SCIR_UPEM",
+            "table": "TenMin"
+        },
+        {
+            "station": "SCIR_UPEM",
+            "table": "SoilWater"
         }
     ]
 }
