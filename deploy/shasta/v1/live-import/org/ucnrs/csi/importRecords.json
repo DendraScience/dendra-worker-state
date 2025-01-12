@@ -172,6 +172,10 @@
         {
             "station": "SCIR_SM05",
             "table": "TenMin"
+        },
+        {
+            "station": "SCIR_SM05",
+            "table": "SoilWater"
         }
     ]
 }
