@@ -164,6 +164,14 @@
         {
             "station": "Ano_Nuevo",
             "table": "TenMin"
+        },
+        {
+            "station": "SCIR_DiabloPeak",
+            "table": "TenMin"
+        },
+        {
+            "station": "SCIR_SM05",
+            "table": "TenMin"
         }
     ]
 }
