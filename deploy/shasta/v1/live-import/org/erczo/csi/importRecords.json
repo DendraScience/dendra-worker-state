@@ -137,6 +137,10 @@
         },
         {
             "station": "SFU_MalcomKnapp",
+            "table": "MKRF_240mins"
+        },
+        {
+            "station": "SFU_MalcomKnapp",
             "table": "Stem_Temp_Data"
         },
         {
@@ -146,6 +150,10 @@
         {
             "station": "SFU_GalianoIsle",
             "table": "GALI_60mins"
+        },
+        {
+            "station": "SFU_GalianoIsle",
+            "table": "GALI_240mins"
         },
         {
             "station": "SFU_GalianoIsle",
