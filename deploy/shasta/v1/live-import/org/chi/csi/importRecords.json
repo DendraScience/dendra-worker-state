@@ -196,11 +196,11 @@
             "table": "TenMin"
         },
         {
-            "station": "SCIR_SM05",
+            "station": "SCIR_pozo_sm05",
             "table": "TenMin"
         },
         {
-            "station": "SCIR_SM05",
+            "station": "SCIR_pozo_sm05",
             "table": "SoilWater"
         },
         {
