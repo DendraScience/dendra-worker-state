@@ -1,0 +1,22 @@
+{
+    "health_check_threshold": 1860,
+    "ldmp_ack_delay": 400,
+    "source_defaults":
+    {
+        "backfill":
+        {
+            "days": 30
+        },
+        "context":
+        {
+            "org_slug": "experimental"
+        },
+        "pub_to_subject": "experimental.import.v1.out.csi",
+        "spec_options":
+        {
+            "order_option": "logged-with-holes"
+        }
+    },
+    "sources":
+    []
+}
