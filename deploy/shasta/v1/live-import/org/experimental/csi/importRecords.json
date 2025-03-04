@@ -18,5 +18,30 @@
         }
     },
     "sources":
-    []
+    [
+        {
+            "station": "SedgwickFlux",
+            "table": "GPS"
+        },
+        {
+            "station": "SedgwickFlux",
+            "table": "Pressure"
+        },
+        {
+            "station": "SedgwickFlux",
+            "table": "Radiation"
+        },
+        {
+            "station": "SedgwickFlux",
+            "table": "SoilsFuelsRain"
+        },
+        {
+            "station": "SedgwickFlux",
+            "table": "Temp_RH"
+        },
+        {
+            "station": "SedgwickFlux",
+            "table": "Winds"
+        }
+    ]
 }
