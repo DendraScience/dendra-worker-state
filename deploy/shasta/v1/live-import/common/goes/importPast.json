@@ -49,17 +49,6 @@
             "pub_to_subject": "ucnrs.import.v1.out.goes"
         },
         {
-            "address": "BEC02B62",
-            "context":
-            {
-                "org_slug": "ucnrs",
-                "station": "ucsr_stuntranch",
-                "table": "GOES_TenMin"
-            },
-            "description": "Stunt",
-            "pub_to_subject": "ucnrs.import.v1.out.goes"
-        },
-        {
             "address": "BEC0102A",
             "context":
             {
