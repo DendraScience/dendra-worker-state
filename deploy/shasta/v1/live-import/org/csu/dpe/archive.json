@@ -1,0 +1,48 @@
+{
+    "source_defaults":
+    {
+        "ignore_errors_at_redelivery": 15,
+        "queue_group": "archive",
+        "sub_options":
+        {
+            "ack_wait": 20000,
+            "durable_name": "20250725"
+        }
+    },
+    "sources":
+    [
+        {
+            "description": "CSU: Archive records imported from CSI",
+            "error_subject": "csu.archive.v1.err.import.csi",
+            "preprocessing_expr":
+            [
+                "($station := payload.station ~> $safeName;",
+                "$table := payload.table ~> $safeName;",
+                "$time := payload.timeString;",
+                "$recNum := $pad($string(payload.recordNumber), -10, '0');",
+                "$docId := $join(['csu', 'csi', $station, $table, $substring($time, 0, 10), $substring($time, 11, 2), $substring($time, 14, 2)], '-') & '_' & $recNum;",
+                "$valid := $contains($docId, /^csu-csi-\\w+-\\w+-\\d{4}-\\d{2}-\\d{2}-\\d{2}-\\d{2}_\\d{10}$/);",
+                "$skip := context.replay;",
+                "$params := $valid ? {'document_id': $docId, 'skip': $skip} : {'skip': $skip};",
+                "$ ~> |$|{'params': $params}|;)"
+            ],
+            "sub_to_subject": "csu.import.v1.out.csi"
+        },
+        {
+            "description": "CSU: Archive DCP messages imported from GOES",
+            "error_subject": "csu.archive.v1.err.import.goes",
+            "preprocessing_expr":
+            [
+                "($station := context.station ~> $safeName;",
+                "$table := context.table ~> $safeName;",
+                "$time := payload.header.timeDate;",
+                "$docId := $join(['csu', 'goes', $station, $table, $substring($time, 0, 10), $substring($time, 11, 2)], '-');",
+                "$valid := $contains($docId, /^csu-goes-\\w+-\\w+-\\d{4}-\\d{2}-\\d{2}-\\d{2}$/);",
+                "$skip := context.replay;",
+                "$params := $valid ? {'document_id': $docId, 'skip': $skip} : {'skip': $skip};",
+                "$ ~> |$|{'params': $params}|;)"
+            ],
+            "sub_to_subject": "csu.import.v1.out.goes"
+        }
+    ]
+}

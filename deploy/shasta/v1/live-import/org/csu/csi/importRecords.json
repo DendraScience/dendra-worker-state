@@ -1,0 +1,23 @@
+{
+    "health_check_threshold": 1860,
+    "ldmp_ack_delay": 400,
+    "source_defaults":
+    {
+        "backfill":
+        {
+            "hours": 72
+        },
+        "context":
+        {
+            "org_slug": "csu"
+        },
+        "pub_to_subject": "csu.import.v1.out.csi",
+        "spec_options":
+        {
+            "order_option": "logged-with-holes"
+        }
+    },
+    "sources":
+    [
+   ]
+}
