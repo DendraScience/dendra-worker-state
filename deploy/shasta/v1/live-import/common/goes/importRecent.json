@@ -124,6 +124,17 @@
             },
             "description": "Death Valley NP Racetrak Playa",
             "pub_to_subject": "ucnrs.import.v1.out.goes"
+        },
+        {
+            "address": "BEC00D8E",
+            "context":
+            {
+                "org_slug": "csu",
+                "station": "Zzyzx",
+                "table": "TenMin"
+            },
+            "description": "ZZyzx Desert Studies Center Weather Station",
+            "pub_to_subject": "csu.import.v1.out.goes"
         }
     ]
 }
