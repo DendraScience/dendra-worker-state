@@ -61,9 +61,12 @@
                     "PCPN_intrvl_Tot",
                     "PCPN_accumulated",
                     "RGTemp_C_Avg",
-                    "AT_10_C_Max",
-                    "AT_10_C_Min",
-                    "AT_10_C_Avg",
+                    "TC_C_2_Max",
+                    "TC_C_2_Min",
+                    "TC_C_2_Avg",
+                    "TC_C_10_Max",
+                    "TC_C_10_Min",
+                    "TC_C_10_Avg",
                     "delta_T_C_Max",
                     "delta_T_C_Min",
                     "delta_T_C_Avg",
@@ -79,19 +82,23 @@
                     "Soil_T500_C_Max",
                     "Soil_T500_C_Min",
                     "Soil_T500_C_Avg",
-                    "VWC_50_Avg",
+                    "VWC50_Avg",
                     "VWC_V_Avg",
+                    "CS616_50_Avg",
+                    "CS616_V_Avg",
                     "Batt_volt_Max",
                     "Batt_volt_Min",
                     "Batt_volt_Avg",
                     "PTemp_Avg",
+                    "ForwardTxX10",
+                    "ReflectTxX10",
                     "Sta_ID"
                 ],
-                "decode_format": "fp2_51",
+                "decode_format": "fp2_58",
                 "decode_slice":
                 [
                     1,
-                    919
+                    1045
                 ],
                 "time_edit": "so_h",
                 "time_interval": 600
