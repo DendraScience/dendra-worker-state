@@ -5,7 +5,7 @@
         "sub_options":
         {
             "ack_wait": 60000,
-            "durable_name": "20250725"
+            "durable_name": "20250801"
         }
     },
     "sources":
