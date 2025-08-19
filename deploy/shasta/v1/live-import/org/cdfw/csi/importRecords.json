@@ -402,6 +402,18 @@
         {
             "station": "HopeValley",
             "table": "EToData"
+        },
+        {
+            "station": "MattoleRiver",
+            "table": "Min10"
+        },
+        {
+            "station": "MattoleRiver",
+            "table": "Hr"
+        },
+        {
+            "station": "MattoleRiver",
+            "table": "EToData"
         }
     ]
 }
