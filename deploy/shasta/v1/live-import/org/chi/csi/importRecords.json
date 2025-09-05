@@ -218,6 +218,30 @@
         {
             "station": "SCIR_UPEM",
             "table": "SoilWater"
+        },
+        {
+            "station": "Airstrip",
+            "table": "Table1"
+        },
+        {
+            "station": "Airstrip",
+            "table": "Table2"
+        },
+        {
+            "station": "Airstrip",
+            "table": "VPAVG"
+        },
+        {
+            "station": "COPR_nl115",
+            "table": "Table1"
+        },
+        {
+            "station": "COPR_nl115",
+            "table": "Table2"
+        },
+        {
+            "station": "COPR_nl115",
+            "table": "VPAVG"
         }
     ]
 }
