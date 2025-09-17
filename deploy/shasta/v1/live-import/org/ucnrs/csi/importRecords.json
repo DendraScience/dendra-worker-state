@@ -168,6 +168,10 @@
         {
             "station": "ucsr_stuntranch",
             "table": "TenMin"
+        },
+        {
+            "station": "WTMT_Summit",
+            "table": "TenMin"
         }
     ]
 }
