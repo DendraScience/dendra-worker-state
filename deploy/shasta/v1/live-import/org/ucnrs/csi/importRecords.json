@@ -109,6 +109,10 @@
         },
         {
             "station": "ucsh_snarl",
+            "table": "TenMin"
+        },
+        {
+            "station": "ucsh_snarl",
             "table": "Distrometer"
         },
         {
