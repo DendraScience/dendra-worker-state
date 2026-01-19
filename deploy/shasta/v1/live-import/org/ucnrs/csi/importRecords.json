@@ -176,6 +176,10 @@
         {
             "station": "WTMT_Summit",
             "table": "TenMin"
+        },
+        {
+            "station": "Strathearn",
+            "table": "TenMin"
         }
     ]
 }
