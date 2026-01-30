@@ -135,6 +135,17 @@
             },
             "description": "ZZyzx Desert Studies Center Weather Station",
             "pub_to_subject": "csu.import.v1.out.goes"
+        },
+        {
+            "address": "C8403F8A",
+            "context":
+            {
+                "org_slug": "chi",
+                "station": "CW3E_DAC",
+                "table": "OTTable"
+            },
+            "description": "CW3E Steam gage at Dry Creek at Cooley Ranch Rd",
+            "pub_to_subject": "chi.import.v1.out.goes"
         }
     ]
 }
