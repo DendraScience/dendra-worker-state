@@ -45,6 +45,22 @@
             "sub_to_subject": "chi.import.v1.out.goes"
         },
         {
+            "description": "CHI: Archive DCP messages imported from GOES (OTT ASCII Column)",
+            "error_subject": "chi.archive.v1.err.import.goes.ott.asciiColumn",
+            "preprocessing_expr":
+            [
+                "($station := context.station ~> $safeName;",
+                "$table := context.table ~> $safeName;",
+                "$time := payload.header.timeDate;",
+                "$docId := $join(['chi', 'goes', $station, $table, $substring($time, 0, 10), $substring($time, 11, 2)], '-');",
+                "$valid := $contains($docId, /^chi-goes-\\w+-\\w+-\\d{4}-\\d{2}-\\d{2}-\\d{2}$/);",
+                "$skip := context.replay;",
+                "$params := $valid ? {'document_id': $docId, 'skip': $skip} : {'skip': $skip};",
+                "$ ~> |$|{'params': $params}|;)"
+            ],
+            "sub_to_subject": "chi.import.v1.out.goes.ott.asciiColumn"
+        },
+        {
             "description": "CHI: Archive Iridium SBD messages from email",
             "error_subject": "chi.archive.v1.err.import.email.iridium.sbd",
             "preprocessing_expr":
