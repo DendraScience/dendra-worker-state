@@ -45,7 +45,7 @@
                 "$params := {'tags': $tags, 'time': $time};",
                 "$options := {'database': 'station_' & $station, 'precision': 'ms'};",
                 "$chars := {'10':'\n','13':'\r','32':' ','34':'','46':'.','48':'0','49':'1','50':'2','51':'3','52':'4','53':'5','54':'6','55':'7','56':'8','57':'9'};",
-                "$data := $reduce(payload.body.data, function($d, $v) { $d & ($lookup($chars,$string($v)) ?? '?')}, '');",
+                "$data := $reduce(payload.body.data, function($d, $v) { $d & ($lookup($chars,$string($v)))}, '');",
                 "$lines := $data  ~> $split('\r\n') ~> $map($trim) ~> $filter($length);",
                 "$points := $lines ~> $map(function($line) { {'values': $split($line, ' ') ~> $map($number), 'measurement': 'source_' & $table} });",
                 "$payload := {'options': $options, 'points': $points};",
