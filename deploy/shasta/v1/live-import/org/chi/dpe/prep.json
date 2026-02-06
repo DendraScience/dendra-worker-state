@@ -65,9 +65,9 @@
                 [
                     "($points := $map(points, function($p, $i) {{",
                     "'fields': {",
-                    "'Feet': $p.values[0],",
-                    "'Fahrenheit': $p.values[1],",
-                    "'Volts': $p.values[2]},",
+                    "'WaterLevel': $p.values[0],",
+                    "'WaterTemperature': $p.values[1],",
+                    "'BatteryVoltage': $p.values[2]},",
                     "'measurement': $p.measurement,",
                     "'time': $time().startOf('h').add($i * -15, 'm').toMillis()",
                     "}});",
