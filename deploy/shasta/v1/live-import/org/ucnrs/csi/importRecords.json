@@ -180,6 +180,10 @@
         {
             "station": "Strathearn",
             "table": "TenMin"
+        },
+        {
+            "station": "Jepson",
+            "table": "TenMin"
         }
     ]
 }

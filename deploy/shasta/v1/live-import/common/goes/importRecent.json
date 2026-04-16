@@ -49,17 +49,6 @@
             "pub_to_subject": "ucnrs.import.v1.out.goes"
         },
         {
-            "address": "BEC0102A",
-            "context":
-            {
-                "org_slug": "ucnrs",
-                "station": "ucjp_jepson",
-                "table": "GOES_TenMin"
-            },
-            "description": "Jepson",
-            "pub_to_subject": "ucnrs.import.v1.out.goes"
-        },
-        {
             "address": "BEC036C6",
             "context":
             {
