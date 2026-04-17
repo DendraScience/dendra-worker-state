@@ -184,6 +184,10 @@
         {
             "station": "Jepson",
             "table": "TenMin"
+        },
+        {
+            "station": "Jepson",
+            "table": "GOES_TenMin"
         }
     ]
 }
