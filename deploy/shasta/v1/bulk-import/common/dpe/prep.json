@@ -229,6 +229,52 @@
             ],
             "pub_to_subject": "ucnrs.prep.v1.out",
             "sub_to_subject": "ucnrs.import.v1.out.file"
+        },
+        {
+            "description": "Dendra R3 Eval: Prepare file import payload for writing to Influx",
+            "error_subject": "r3-eval.prep.v1.err.import.file",
+            "ignore_errors": true,
+            "preprocessing_expr":
+            [
+                "($org := context.org_slug ~> $safeName;",
+                "$station := context.station ~> $safeName;",
+                "$table := context.table ~> $safeName;",
+                "$tags := ['org' & '$' & $org, 'station' & '$' & $station, 'table' & '$' & $table];",
+                "$time := payload.time;",
+                "$params := {'tags': $tags, 'time': $time};",
+                "$database := context.storage_database ? context.storage_database : $station ? 'station_' & $station : 'database_unknown';",
+                "$meas := context.storage_table ? context.storage_table : $table ? 'source_' & $table : 'unknown';",
+                "$options := {'database': $database, 'precision': 'ms'};",
+                "$fields := payload ~> $deleteNulls ~> $deleteKeys(['time']);",
+                "$points := [{'fields': $fields, 'measurement': $meas, 'time': $time}];",
+                "$payload := {'options': $options, 'points': $points};",
+                "$ ~> |$|{'params': $params, 'payload': $payload}|;)"
+            ],
+            "pub_to_subject": "experimental.prep.v1.out",
+            "sub_to_subject": "r3-eval.import.v1.out.file"
+        },
+        {
+            "description": "CUAHSI Eval: Prepare file import payload for writing to Influx",
+            "error_subject": "cuahsi-eval.prep.v1.err.import.file",
+            "ignore_errors": true,
+            "preprocessing_expr":
+            [
+                "($org := context.org_slug ~> $safeName;",
+                "$station := context.station ~> $safeName;",
+                "$table := context.table ~> $safeName;",
+                "$tags := ['org' & '$' & $org, 'station' & '$' & $station, 'table' & '$' & $table];",
+                "$time := payload.time;",
+                "$params := {'tags': $tags, 'time': $time};",
+                "$database := context.storage_database ? context.storage_database : $station ? 'station_' & $station : 'database_unknown';",
+                "$meas := context.storage_table ? context.storage_table : $table ? 'source_' & $table : 'unknown';",
+                "$options := {'database': $database, 'precision': 'ms'};",
+                "$fields := payload ~> $deleteNulls ~> $deleteKeys(['time']);",
+                "$points := [{'fields': $fields, 'measurement': $meas, 'time': $time}];",
+                "$payload := {'options': $options, 'points': $points};",
+                "$ ~> |$|{'params': $params, 'payload': $payload}|;)"
+            ],
+            "pub_to_subject": "experimental.prep.v1.out",
+            "sub_to_subject": "cuahsi-eval.import.v1.out.file"
         }
     ]
 }
