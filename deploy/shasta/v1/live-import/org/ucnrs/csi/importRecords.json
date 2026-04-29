@@ -188,6 +188,14 @@
         {
             "station": "Jepson",
             "table": "GOES_TenMin"
+        },
+        {
+            "station": "ucgr_granites",
+            "table": "TenMin"
+        },
+        {
+            "station": "ucgr_granites",
+            "table": "GOES_TenMin"
         }
     ]
 }
