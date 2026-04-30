@@ -27,17 +27,6 @@
             "pub_to_subject": "ucnrs.import.v1.out.goes"
         },
         {
-            "address": "BEC01EF8",
-            "context":
-            {
-                "org_slug": "ucnrs",
-                "station": "ucgr_granites",
-                "table": "GOES_TenMin"
-            },
-            "description": "Granites",
-            "pub_to_subject": "ucnrs.import.v1.out.goes"
-        },
-        {
             "address": "BEC04E84",
             "context":
             {
