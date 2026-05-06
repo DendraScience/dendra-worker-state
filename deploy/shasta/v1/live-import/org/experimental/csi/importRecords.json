@@ -42,6 +42,26 @@
         {
             "station": "SedgwickFlux",
             "table": "Winds"
+        },
+        {
+            "context":
+            {
+                "org_slug": "experimental",
+                "storage_database": "org_69ea70aaeb4fbf529c3d0483",
+                "storage_table": "station_granites_source_tenmin"
+            },
+            "station": "Granites",
+            "table": "TenMin"
+        },
+        {
+            "context":
+            {
+                "org_slug": "experimental",
+                "storage_database": "org_69ea6e62f9e8a1e372d95b14",
+                "storage_table": "station_santacruzisland_source_tenmin"
+            },
+            "station": "SantaCruzIsland",
+            "table": "TenMin"
         }
     ]
 }
