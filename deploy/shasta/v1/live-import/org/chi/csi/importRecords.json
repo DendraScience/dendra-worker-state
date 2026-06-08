@@ -192,15 +192,15 @@
             "table": "VWC"
         },
         {
-            "station": "SCIR_DiabloPeak",
+            "station": "scir_DiabloPeak",
             "table": "TenMin"
         },
         {
-            "station": "SCIR_pozo_sm05",
+            "station": "scir_pozo_sm05",
             "table": "TenMin"
         },
         {
-            "station": "SCIR_pozo_sm05",
+            "station": "scir_pozo_sm05",
             "table": "SoilWater"
         },
         {
@@ -208,19 +208,19 @@
             "table": "TenMin"
         },
         {
-            "station": "SCIR_Forney",
+            "station": "scir_Forney",
             "table": "TenMin"
         },
         {
-            "station": "SCIR_UPEM",
+            "station": "scir_UPEM",
             "table": "TenMin"
         },
         {
-            "station": "SCIR_UPEM",
+            "station": "scir_UPEM",
             "table": "SoilWater"
         },
         {
-            "station": "SCIR_UPEM",
+            "station": "scir_UPEM",
             "table": "NetRadiometer"
         },
         {
