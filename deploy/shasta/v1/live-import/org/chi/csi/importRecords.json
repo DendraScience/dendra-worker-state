@@ -204,7 +204,7 @@
             "table": "SoilWater"
         },
         {
-            "station": "SCIR_ChristyBluff",
+            "station": "scir_ChristyBluff",
             "table": "TenMin"
         },
         {
