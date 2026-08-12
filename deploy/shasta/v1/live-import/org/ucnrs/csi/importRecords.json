@@ -166,6 +166,10 @@
             "table": "TenMin"
         },
         {
+            "backfill":
+            {
+                "days": 86
+            },
             "station": "Ano_Nuevo",
             "table": "TenMin"
         },
