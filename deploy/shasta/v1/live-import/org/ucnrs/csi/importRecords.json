@@ -60,6 +60,10 @@
             "table": "TenMin"
         },
         {
+            "backfill":
+            {
+                "days": 90
+            },
             "station": "ucel_elliotchaparral",
             "table": "TenMin"
         },
